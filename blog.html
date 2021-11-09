@@ -1,0 +1,889 @@
+
+<link rel="stylesheet" href="style_blog.css" />
+<div class="sidenav">
+<a href="http://web.cse.ohio-state.edu/~rahman.92/"><h3 style="color: black;"> Protiva Rahman</h3></a>
+<!--img  border ="1" src="pic2.jpg" height="160">
+<a href="#about"><h3 style="color: 	#383838;">About</h3></a>
+<a href="#news"><h3 style="color:  	#383838;">News</h3></a>
+<a href="#pubs"><h3 style="color:  	#383838;">Publications</h3></a>
+<a href="#awards"><h3 style="color:  	#383838;">Awards and Leadership</h3></a>
+<a href="#blog"><h3 style="color:  	#383838;">Blog</h3></a-->
+<div id='blogcontents'>
+<a href="#amia2018">AMIA 2018</a>
+<a href="#vis2018">VIS 2018</a>
+<a href="#berlin">Berlin!</a>
+<a href="#vldb2018">VLDB 2018</a>
+<a href="#brazil">Rio!</a>
+<a href="https:go.osu.edu/icarus">Icarus</a>
+<a href="https://medium.com/ou-data-analytics-lab/ou-dalab-sigmod-tutorials-e05eb5209f6f">OU Blog Post Featuring our tutorial on Evaluating Interactive Data Systems!</a>
+<a href="#sigmod2018">SIGMOD 2018</a>
+<a href="#ieeeichi2018">IEEE ICHI 2018</a>
+<a href="#interaction">An Annotated Bibliography of Human Interaction Costs</a>
+<a href="#dsia">DSIA 2015 and 2017</a>
+<a href="https://medium.com/@ohiostateswe/graduate-student-feature-march-2018-64577b871015"> OSU SWE Blog Post Featuring Me!</a>
+</div>
+</div>
+
+<div class="main">
+<h1> Notes</h1>
+<hr>
+<h2 id="amia2018">AMIA 2018</h2>
+
+<h4 id="keynotedrjessicamega">Keynote - Dr. Jessica Mega</h4>
+
+<p>AMIA 2018 kicked off with a keynote by Dr. Jessica Mega, who has a very long and very impressive bio including Chief Medical Officer of Verily (formerly part of Google X), cardiologist at Brigham and Women's Hospital and faculty at Harvard Medical School. She began her talk by comparing the fear that AI and ML will replace physicians with the fear that the stethoscope would take away from the patient experience. Her introduction into informatics happened when, during her time as a cardiologist, the IT team asked her to figure out how to reduce the data being collected. This led her to talk to Google's Cloud Computing services and eventually a position at the life sciences teams at Google's Project X, which spun out to be Verily. </p>
+
+<p>Verily's goal is to organize health information in a useful manner so people enjoy better life. There are three steps to achieving this: collect data (in between patient visits to get more information), organize it, and then activate it, i.e., get actionable insights from it. The AI revolution has been brought about the increase in data and compute power, giving us the ability to do healthcare at scale. Diabetes and vector-borne diseases are the two ailments that Verily is looking at on a global scale. Physicians agree with each other and themselves only 65-70% of the time with respect to results of 
+diabetic retinopathy screening, while image classification models achieve 95% accuracy. Dr. Mega points out that this is an area where AI can augment human abilities. Moving on to the second project, mosquitoes are the deadliest animals. Male mosquitoes do not bite, hence there is a focus on identifying and eradication female pathogens by not allowing them to breed. This project is called Debug (pun intended).</p>
+
+<h4 id="crowdsourcingchartreviewjosephcocochengyechenhajajyevgeniyvorobeychikjoshuacdennylaurienovakbradleyamalinthomaslaskodanielfabbri">Crowdsourcing Chart Review - Joseph Coco, Cheng Ye, Chen Hajaj, Yevgeniy Vorobeychik, Joshua C. Denny, Laurie Novak, Bradley A. Malin, Thomas Lasko, Daniel Fabbri</h4>
+
+<p>VBOSSA a crowdsourcing tool for medical tasks. This tool differs from others in that it allows for tighter privacy control and requires workers to be medical students due to the sensitive nature of the data. They also find that 2-3 medical students have the same accuracy as an expert. Students are paid $20 an hour, while registered nurses are paid $100 an hour.</p>
+
+<h4 id="biomedicalrelationextractionfromcontexthttpswatermarksilverchaircombty114pdftokenaqecahi208be49ooan9kkhw_ercy7dm3zl_9cf3qfkac485ysgaaakwwggjibgkqhkig9w0bbwagggi5miicnqibadccai4gcsqgsib3dqehataebglghkgbzqmeas4weqqmdgqv_ralz6tquxrzageqgiib_idbpdda8ih4aps8vlhl5uirs7fhk54t3oge8goqyaagqxbyc243cx3nbr1b5afxuxlectclz7hsbumhzmvau4rwr1tcv5xg7byxzwskngrhowa8xnspiawyz8dmmecjonqz2qlcnbgkj7u1d08khr_uzvk6hop06dropuoeprxkuv1glyboeznefqnwm6niilh4z9zzu4hoabfokrszsyheea2lnz78qhog7_vtyitmmunuzjabzmf_w8ublovf2zeeyillxx5y8jalce4kd14q0gwthuusnawdnir0gnnfpe9dm6b7kfohk1u60vcyffql93itghnrbo4uvt7hzsoaqsbb800kf8bbsgd79j5fzavdlrow8gu5qnxazzslrtmnzslfz8ftjlh_4lndrz2mwzzhandaod9oazshrkwmlmyafylpgv4pgoosol3gsr0v4jhu9suvq8jqxehmoobs_rytwjhi6avvvkpfequua1qtn0obkbpugqlp32jf1avohn4_uu4sll_ehxcs_jmispvrhshmszmre4dyhamefhy3qonm2jvb2uknjdwshae1u6hbb6yioucg2r6zkfapd8s2mpahkkb8qbz_igf8zj7n6rda9qrlzzvyx7phfrsliulv2crxxzqud4stbfy27llr3wcbethanyperchaamiadoctoraldissertationwinner"><a href="https://watermark.silverchair.com/bty114.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAkwwggJIBgkqhkiG9w0BBwagggI5MIICNQIBADCCAi4GCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMdGQv_raLZ6TQuxRZAgEQgIIB_-IdBpDDA8ih4aPS8Vlhl5uirS7FHk54t3oge8goQyaaGqXBYC243cx3NbR1b5afXUXlECTCLZ7HsBumHzmVaU4rWr1tcV5XG7ByXzWsKngRHOWa8xnSpIAWYZ8DMMeCjonqZ2qlc-nbGkJ7U1D08khr_UzVK6hoP06DropUoEPrXkUV1GLYBoEzNeFqnWM6nIIL-h4Z9ZZu-4HOAbFoKRSzsyHeeA2LnZ78qhOG7_v-TYitMmUnUZJaBZmf_w8ublovf2ZEeyillxX5y8JAlce4Kd14Q0gwThuusNAWDnIr0gnNfPe9Dm-6B7kFOHK1U60vcyFfql93ItGhNrBo4uVT7HzsoAQsbb-80-0Kf8bbsgD79J5fZaVdLrOw8gU5QnXaZzSLrTmnZslfZ8FTJlH_4lNdrZ2mwzzHANDAOD9OazSHRKWmlMyAfYLpgV4pGoOsOL3gSR0v4JhU9SuvQ8jqxEHmoobS_ryTw-jhI6AvvvkpF-eQuuA1Qtn0obKBpUGqLp32jf1AVoH-N4_uu4sLl_EHXCs_JMISPVRHSHMSzmRE4DyHaMEFHy3qONm2JVb2uKNJDWshAe1u6hBb6yIOUCG2r6ZKFapd8s2mPA-HKkb8qBz_Igf8ZJ7N6Rda9qRLZzvyx7phfRSLIuLv2CrXxZQuD4Stbfy27LLr3Wc">Biomedical Relation Extraction from Context</a>  - Bethany Percha - <em>AMIA Doctoral Dissertation Winner</em></h4>
+
+<p>Drug-drug interactions are a major concern when a new drug goes into market, and they are hard to predict. One way to approach this is to use evidence of drug-protein interaction. There is a lot of variation in how this information is described in the literature. The PHARE system was used to address this to an extent and extract drug-protein interactions from literation. The PHARE system however was limited in the type of information it could extract. Ideas from distributional semantics were then employed, leading to the construction of a new algorithm Ensemble Bi-directional Co-clustering. This algorithm takes as input a sparse matrix where the rows correspond to entity-pairs and columns correspond to dependency paths (dependency paths connect drugs and proteins, indicating there is an interaction). The bidirectional coclustering "mushes the rows and columns together"(sic), giving a richer set of relations. Entity pairs were annotated with PubTator and dependency graphs were created with Stanford's NLP Parser.</p>
+
+<h4 id="useofanearlywarningsystemwithgradualalertingreducestimetotherapyinacuteinpatientdeteriorationsantiagoromerobrufaujordankautzkimgainescurtstorliematthewjohnsonjoelhickmanandjeannehuddleston">Use of an Early Warning System with Gradual Alerting Reduces Time to Therapy in Acute Inpatient Deterioration - Santiago Romero-Brufau, Jordan Kautz, Kim Gaines, Curt Storlie, Matthew Johnson, Joel Hickman and Jeanne Huddleston</h4>
+
+<p>Acute deterioration (quick decrease in health) in patients is a major cause of death and costs. Sepsis and acute respiratory failure are two common causes. Delayed transfer to ICU and delayed antibiotic administration increases mortality. To address these issues, an early warning system was designed which increases burden on staff but is better for patients. The system uses push alerts (vs. pull alerts), it mandates bedside assessment on an alert, it issues an alert to follow-up and automatically escalates the alert to a higher level. Using this system, time to intervention reduced by 30mins and time to therapy reduced by 40mins. ICU transfer rate and patient rates remained unchanged.</p>
+
+<h4 id="usingfeedbackinterventiontheorytoguideclinicaldashboarddesigndawndowdingjacquelinemerrilldavidrussell">Using Feedback Intervention Theory to Guide Clinical Dashboard Design - Dawn Dowding, Jacqueline Merrill, David Russell</h4>
+
+<p>Feedback on performance is a key component in quality improvement. In this work, guidelines from feedback intervention theory were applied to visualize information about performance. The system was deployed in a large home care agency focusing on congestive heart failure(CHF), with 195 nurses. Nurses struggled with monitoring vital signs in the EHR. The dashboard allowed nurses to select the information that they wanted to see through radio buttons. They could select between bar charts and scatter plot visualizations. The system was measured on usefulness (time to completion), satisfaction (system usability scale), and usability (heuristic evaluation). They find that the system could be used with limited training (discoverable) and was highly usable.</p>
+
+<h4 id="healthinformationtechnologyneedsofcommunityhealthcentercareteamscomplexpatientsandsocialdeterminantsofhealthinformationkhayadclarkdavidadorrrajacholanrachelgoldrichardholdenrichellekoopmanbhavayasachdevanatewarrenerikgeissaldeborahjcohen">Health Information Technology Needs of Community Health Center Care Teams: Complex Patients and Social Determinants of Health Information - Khaya D. Clark, David A. Dorr, Raja Cholan, Rachel Gold, Richard Holden, Richelle Koopman, Bhavaya Sachdeva, Nate Warren, Erik Geissal, Deborah J. Cohen</h4>
+
+<p>Community health centers cater mostly to disadvantaged populations. As a result, social factors such as homelessness plays an important role in their health. In this work, the authors surveyed 9 community health centers to see how social information is collected. They find that there is no common protocol for collecting such social determinants of health (SDH) information. Providers will sometimes collect it and they do so in various manners, noting it in different parts of the EHR. There is thus a need for a form to capture structured SDH data.</p>
+
+<h4 id="whenanalertisnotanalertapilotstudytocharacterizebehaviorandcognitionassociatedwithmedicationalertsthomasjreesekensakukawamotoguilhermedelfiolfrankdrewsteresataftheidikramercharleneweirbeststudentpaperwinner">When an Alert is Not an Alert: A Pilot Study to Characterize Behavior and Cognition Associated with Medication Alerts - Thomas J. Reese, Kensaku Kawamoto, Guilherme Del Fiol, Frank Drews, Teresa Taft, Heidi Kramer, Charlene Weir - <em>Best Student Paper Winner</em></h4>
+
+<p>In this work, eye-tracking and retrospective think aloud protocol is used to study pharmacists' behavior to prescription warnings (e.g. duplicate medication, drug-drug interaction, allergy, etc.). They find that in most cases pharmacists anticipate the alert before it shows up and they have already accounted for it, i.e., the alert is unhelpful. Further, pharmacists are aware that alerts are seen by the prescribing physician/nurse, who would have already accounted for the risk.</p>
+
+<h4 id="experimentingnewsearchanduserinterfaceinpubmedlabszhiyonglunicolasfiorini">Experimenting new search and user interface in PubMed Labs - Zhiyong Lu, Nicolas Fiorini</h4>
+
+<p>PubMed labs is the experimental wing of Pubmed search and is working on optimizing pubmed labs. Pubmed labs now highlights words in the abstract that correspond to the search, and it has a bar chart showing frequency of articles by year, which also lets you filter by year. It allows the user to choose between best match and most recent results. </p>
+
+<h4 id="knowledgeelicitationofhomecareadmissiondecisionmakingprocessesviafocusgroupmembercheckinganddatavisualizationyushiyangellenjbasspaulinassockolow">Knowledge Elicitation of Homecare Admission Decision Making Processes via Focus Group, Member Checking and Data Visualization - Yushi Yang, Ellen J. Bass, Paulina S. Sockolow</h4>
+
+<p>Knowledge elicitation from domain experts can be costly and time-consuming. This work tries to devise a method to make knowledge elicitation more efficient, by conducting a focus group followed by member checking (where results of focus group were validated), supported by visualizations. Results of a 75 min focus group were visualized via a node-link diagram:<br><br>
+<img src="pics/amia/coordinated_view.png" alt="alt text" height = '300px'/> <br/>
+
+In the validation stage, however, they switch to a tabular view because nurses had a hard time comprehending the diagram.</p>
+
+<h4>Clinical Prioritization & Cognitive Burden, Who’s Ready for Change? - Ari H Pollack, Maher Khelifi, Wanda Pratt</h4>
+
+<p>In order to reduce cognitive burden on the physician for deciding which patient to see first, three high-fidelity prototypes were tested. The timeline view was preferred:<br><br>
+<img src="pics/amia/cb.png" alt="alt text" height = '300px'/> <br/>
+
+
+<h4 id="datascopeinteractivevisualexploratorydashboardsforlargemultidimensionaldatahttpspeerjcompreprints26441pdfganeshiyersapoonjyotiduttaduwarahashishsharma"><a href="https://peerj.com/preprints/26441.pdf">DataScope: Interactive Visual Exploratory Dashboards for Large Multidimensional Data</a> - Ganesh Iyer, Sapoonjyoti DuttaDuwarah, Ashish Sharma</h4>
+
+<p>Datascope allows dashboard authors to specify dashboard designs in a declarative manner. Dashboard authors consist of data stewards who want to allow domain experts, i.e., dashboard consumers, to explore dashboards for hypothesis generation. Dashboard consumers can use brushing and linking to filter and explore datasets of interest.</p>
+
+<h4 id="amiatakeaways">Takeaways</h4>
+
+<p>Many of design studies result in "we need a structured way to capture these data points". Could this be automated by seeing where common information is captured across interfaces? For example, if we extract how many times social determinant of health information is noted by physicians in different EHR modules as free text or annotations, we could automatically generate a separate EHR module containing form fields for the different types of social information. Similarly, by studying EHR log data to see what information is accessed together, we can optimize workflows by storing that information together.    </p>
+
+<p>Design of exploratory systems is done by a middle man, who is not a domain expert. Instead of letting the user explore the data on their own, the system designer authors dashboards to allow the expert to facetedly explore the data for hypothesis generation. This means that the dashboard author needs to have a good overview of the data and understand domain expert needs. Couldn't the dashboard author be automated away by using expert interaction logs? Perhaps there is a way to combine ideal insights from the data with tools such as Draco to remove the exploration all together and just show the user insights using the right vis. Maybe multiple visualizations need to be shown together to validate the hypothesis?</p>
+
+<p>Finally, are there better ways to guide the user during search? Currently pubmed labs lets you search by best match or most recent, and it shows a bar chart of number of articles by year (which also lets you filter by year). Can it also cluster articles by themes, thus diversifying your search (and making sure you have cited everyone you should!)?</p>
+<hr>
+
+
+
+<div id='vis2018'>
+
+<h2 id="vis2018">VIS 2018</h2>
+
+<p>I presented my work on <a href="dsia.html">visualizing rules</a> at the workshop on Data Systems for Interactive Analytics (DSIA), which means I also had the opportunity to attend VIS! While I missed all the parties as a result of being jetlagged and going to bed by 8pm, the conference sessions themselves were fun to attend. </p>
+
+<p><strong>Sunday</strong> was spent on stressing and presenting at DSIA. The workshop summary and slides from talks can be found on its <a href="https://www.interactive-analysis.org/">webpage</a>. On <strong>Monday</strong>, I attended the workshop on <a href="https://learningfromusersworkshop.github.io/">Machine Learning from User Interaction for Visualization and Analytics</a>. The highlights are as follows:</p>
+
+<h4 id="providingcontextualassistanceinresponsetofrustrationinvisualanalyticstaskshttpslearningfromusersworkshopgithubiopapersfrustrationpdfbyprateekpanwaradambradleychristophercollins"><a href="https://learningfromusersworkshop.github.io/papers/Frustration.pdf">Providing Contextual Assistance in Response to Frustration in Visual Analytics Tasks</a> by Prateek Panwar, Adam Bradley, Christopher Collins</h4>
+
+<p>The goal of this work is to identify when users are frustrated during visual analytics and provide appropriate intervention. They use eye-tracking and galvanic responses to infer frustration. Different classifiers were tested for identifying frustration using data collected from these devices, with the random forest classifier achieving highest accuracy. They use a moving window to detect frustration - responses from sensors are detected every 4 seconds. The system uses a 32-sec moving window, so that there are 8 classifications in a window to build up confidence. An action is only taken if there are at least 5 frustration events in a window. Frustration intensity is tracked by assigning a weight of 1 to a frustration event after a non-frustration event, and a weight of one more than the previous frustration even to consecutive events. Different frustration states require different interventions. The eye-tracking information is used to provide context on the type of guidance to recommend, such as interface, dataset and total disengagement. There are three types of assistance available: 1) short hint, 2) step-by-step instructions, and 3) open instruction manual. The type of recommendation depends on the intensity of frustration and the user’s response to a recommendation. </p>
+
+<h4 id="interactivemachinelearningheuristicshttpslearningfromusersworkshopgithubiopapersimlhpdfbyericcorbettnathanielsaulmegpirrung"><a href="https://learningfromusersworkshop.github.io/papers/IMLH.pdf">Interactive Machine Learning Heuristics</a> by Eric Corbett, Nathaniel Saul, Meg Pirrung</h4>
+
+<p>This paper offers ten heuristics for designing interactive machine learning systems:</p>
+
+<ul>
+<li>User should steer model</li>
+
+<li>Enable user to provide feedback that improves concept quality</li>
+
+<li>Capture intent rather than input</li>
+
+<li>Support user assessment of Model quality</li>
+
+<li>Provide instance based explanations to the user</li>
+
+<li>Support rich, natural feedback</li>
+
+<li>Make interactions and constraints explicit</li>
+
+<li>Promote trial and error bases model - allow the user to see revision/history logs and allow undo.</li>
+
+<li>Error prevention - guide the user by giving suggestions</li>
+
+<li>Help and Documentation - provide a tutorial on the system</li>
+</ul>
+
+<h4 id="modelspacevisualizingthetrailsofdatamodelsinvisualanalyticssystemshttpslearningfromusersworkshopgithubiopapersmodelspacepdfbyelibrownsriramyarlagaddakristincookremcochangalexendert"><a href="https://learningfromusersworkshop.github.io/papers/ModelSpace.pdf">ModelSpace: Visualizing the Trails of Data Models in Visual Analytics Systems</a> by Eli Brown, Sriram Yarlagadda, Kristin Cook, Remco Chang, Alex Endert</h4>
+
+<p>Visual analytic systems that use machine learning models are updated by user interactions. User interaction trails can then be represented as a sequence of the model states that they lead to. ModelSpace allows analysis of user trails by projecting the vector representation of model states using multidimensional scaling. Similar interaction paths can then be seen by their spatial similarity. </p>
+
+<h4 id="ahumanintheloopsoftwareplatformhttplihcaio5000byfangcaodavidscrogginslebnathomaselibrown"><a href="http://lihca.io:5000/">A Human-in-the-Loop Software Platform</a> by Fang Cao, David Scroggins, Lebna Thomas, Eli Brown</h4>
+
+<p>The Library for Interactive Human-Computer Analytics(LIHCA) allows developers to quickly build human-in-the-loop systems by setting up the backend MVC server (Flask) and allowing the user to specify machine learning models through a JavaScript frontend. LHICA provides metric learning and implicit parameter tuning based on user interactions.</p>
+
+<h4 id="futureresearchdirectionsinuserinteractionsandmachinelearning">Future Research Directions in User Interactions and Machine Learning</h4>
+
+<p>At the end of the workshop participants broke up into small groups to discuss future research directions in machine learning and user interactions. The discussions in our group led by <a href="http://hdc.cs.arizona.edu/people/kisaacs/">Kate Isaacs</a> revolved around coming up with a taxonomy of interaction logging and how we can leverage user interaction logs. An interesting idea suggested by <a href="https://www.cse.wustl.edu/~alvitta/">Alvitta Ottley</a> was, given a sequence of interactions, could the system optimize the set of interactions to get to the <em>shortest path</em> to the outcome. It could then use these logs to <em>learn</em> user patterns and recommend actions to the user based on prior interaction data. Certain users could be identified as power users with their traces weighted higher. </p>
+
+<p>That concluded the workshop and my Monday. <strong>Tuesday</strong> marked the main conference opening and the morning began with award paper presentations.  Memorable among these was Danyel Fisher's quote <em>"Do I make my users happy or do I make them effective?"</em>, on talking about how users liked animations even though it made them less effective as shown in their 10-year test of time infovis paper <a href="https://ieeexplore.ieee.org/document/4658146">Effectiveness of Animation in Trend Visualization</a>. The 20 year test of time infovis paper was accepted by Ed Chi for <a href="https://ieeexplore.ieee.org/document/729560">work</a> on classifying interaction operators within the visualization pipeline. He compared his paper to <a href="https://twitter.com/edchi/status/1055606506991759360">a fussy turtle as opposed to a flashy rabbit</a> (because those are the <a href="https://twitter.com/arvindsatya1/status/1054637055635058689">two kinds of vis papers</a>). The <strong>best paper</strong> winners for VAST, InfoVis and SciVis were as follows:</p>
+
+<h4 id="tpflowprogressivepartitionandmultidimensionalpatternextractionforlargescalespatiotemporaldataanalysishttpsieeexploreieeeorgabstractdocument8440840bydongyuliupanpanxuliuren"><a href="https://ieeexplore.ieee.org/abstract/document/8440840">TPFlow: Progressive Partition and Multidimensional Pattern Extraction for Large-Scale Spatio-Temporal Data Analysis</a> by Dongyu Liu, Panpan Xu, Liu Ren</h4>
+
+<p>The problem of multidimensional analysis of spatio-temporal data is approached as tensor decomposition. Rank-one decomposition is applied to the tensor representation of the data to extract patterns. To maintain explainability, the original tensors are approximated by rank-one tensor components, with loading vectors that denote the relative strengths of the components. To identify latent patterns, i.e., patterns not visible at the current aggregated level, they perform piecewise rank one tensor decomposition, which captures sub-tensors with similar patterns in spatial, temporal and other domain specific dimensions. This involves minimizing a cost function over different partitions of the data, given an attribute and number of parts. However, since there are multiple ways to partition the data, they cluster the data on the given dimensions to choose partitions.</p>
+
+<h4 id="formalizingvisualizationdesignknowledgeasconstraintsactionableandextensiblemodelsindracohttpsieeexploreieeeorgabstractdocument8440847bydominikmoritzchenglongwanggreglnelsonhaldenlinadammsmithbillhowejeffreyheer"><a href="https://ieeexplore.ieee.org/abstract/document/8440847">Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco</a> by Dominik Moritz, Chenglong Wang, Greg L. Nelson, Halden Lin, Adam M. Smith, Bill Howe, Jeffrey Heer</h4>
+
+<p>Draco automates design specification by representing design heuristics as constraints, which are solved by answer set programming (ASP). The constraint weights are learned from data. ASP consists of atoms, literals and rules. Atoms consist of prepositions which can be true or false, literals consist of atoms and their negations, a rule is a conjunction of literals and is denoted as:
+A :-L<sub>1</sub>,...,L<sub>n</sub>. A is called the atom or head of the rule and it is true/derivable if all the literals in the body of the rule are true. Rules can be bodiless or headless. Bodiless rules are facts, while headless rules are integrity constraints, i.e., satisfying the body is a contradiction. An answer set to a rule consists of a set of atoms that are consistent do not violate the constraints, can be used to derive the rule and are minimal with respect to unknown facts. Aggregate rules of the form <em>l</em> {A<sub>0</sub>,A<sub>1</sub>,A<sub>2</sub>,A<sub>3</sub>} <em>k</em> indicate at least <em>l</em> and atmost <em>k</em> atoms in the set are true. Hard constraints are modeled as headless rules, constraining the design space to avoid violations, while soft constraints are modeled as weighted headless rules, where violating the constraint is allowed, but it incurs a penalty equal to the weight of the rule. An answer set is optimal if it minimizes the cost of violated soft constraints.</p>
+
+<p>The vega-lite specification, user task and data schema are represented as atoms. The vega-lite specification consists of mark type, encoding definitions with variable name, type (quantitative, ordinal) and aggregates if required. Draco also specifies the encoding channel, e.g., x-axis. The schema contains number of rows, field type, cardinality, entropy and extent (range of values). The user task can be a value task or a summary task, and specify relevant fields as interesting.</p>
+
+<p>Even for a visualization expert, manually tuning weights for complex models with multiple constraints is difficult. Draco solves this by using RankSVM to learn weights of soft constraints from ranked pairs of visualizations. The ranked pairs consist of (v<sub>1</sub>, v<sub>2</sub>, y) with y=-1 or 1 indicating if v<sub>1</sub> or v<sub>2</sub> is preferred respectively. First the constraint solver is run on the dataset to convert v<sub>1</sub>, v<sub>2</sub> to their vector representations (which consists of the number of times that they violate soft constraints) and then use linear regression with L<sub>2</sub> regularization to obtain waits.</p>
+
+<h4 id="deadeyeanovelpreattentivevisualizationtechniquebasedondichopticpresentationhttpsieeexploreieeeorgstampstampjsparnumber8440097byandreykrekhovandjenskruger"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8440097">Deadeye: A Novel Preattentive Visualization Technique Based on Dichoptic Presentation</a> by Andrey Krekhov and Jens Kruger</h4>
+
+<p>Deadeye <em>highlights</em> objects in a visualization by showing different stimuli to each eye, i.e., to draw attention to an object it is shown on one eye, while the other one sees a white spot. This frees up visual channels, since shape and color now do not have to be preserved for highlighting and can be used for encoding other data. The method was validated through user studies, which show that this is preattentive, i.e., it immediately draws user attention, and that it does not burden users with headache/discomfort. </p>
+
+<p>While on the topic of best papers, I wanted to cover the <strong>three infovis honorable mentions</strong> that were presented later in the week.</p>
+
+<h4 id="charticulatorinteractiveconstructionofbespokechartlayoutshttpswwwmicrosoftcomenusresearchuploadsprod201808charticulatorinfovis2018pdfbydonghaorenbongshinleeandmatthewbrehmer"><a href="https://www.microsoft.com/en-us/research/uploads/prod/2018/08/Charticulator-InfoVis2018.pdf">Charticulator: Interactive Construction of Bespoke Chart Layouts</a> by Donghao Ren, Bongshin Lee, and Matthew Brehmer</h4>
+
+<p>Another constraint-based approach, Charticulator lets people without programming skills specify new chart designs(as opposed to selecting from a template). Charticulator is built on three design principles to allow for diverse chart types:</p>
+
+<ul>
+<li><em>Promote layout as a deliberate design choice</em>: Layout is treated as a first-class citizen.</li>
+
+<li><em>Compose a layout using a set of partial specifications</em>: Editing is available at chart level and glyph level.</li>
+
+<li><em>Balance direct manipulation and configuration panels</em>: Anchors, margins and gaps can be directly manipulated, while more complex actions such as stacking glyphs can be done through menus and panel.</li>
+</ul>
+
+<p>The formal specification of the framework is as follows:</p>
+
+<p><img src="http://web.cse.ohio-state.edu/~rahman.92/pics/vis/charticulator.png" alt="image" /></p>
+
+<p>Glyph level specifications include marks and guides and equality layout constraints that define relative positions of marks. Chart-level elements include a plot segment that lays out marks on axes, scales them and specifies colors through legends. It currently uses a predefined legend for each scale. Mark shapes are morphed through vector graphics in non-cartesian systems. Axes can have three types: scaffolds sequentially stack glyphs, categorical axes group objects in the same category and evenly distributes groups, and numerical axes place objects according to their values.  </p>
+
+<p>Chart creators can create glyphs by dragging different marks to the glyph editor. Data binding is done by dropping attributes to available drop zones (e.g. height). Charticulator specifies layout constraints at the chart level(e.g., aligning glyphs), glyph level(e.g., relations between width and starting point) and data binding level(e.g., scaling values). It then uses a conjugate gradient constraint solver to compute the layout. Created charts can be exported as templates which can then be used in Power BI.</p>
+
+<h4 id="mappingcolortomeaningincolormapdatavisualizationshttpsschlosslabdiscoverywisceduwpcontentuploads201809schlossgramaziosilvermanparkerwanginpresspdfkarenbschlossconnorcgramazioataylorsilvermanmadelinelparkeraudreyswang"><a href="https://schlosslab.discovery.wisc.edu/wp-content/uploads/2018/09/SchlossGramazioSilvermanParkerWanginPress.pdf">Mapping Color to Meaning in Colormap Data Visualizations</a> - Karen B. Schloss, Connor C. Gramazio, A. Taylor Silverman, Madeline L. Parker, Audrey S. Wang</h4>
+
+<p>I think this paper's abstract does a great job of summarizing its methods and results. This work conducts several empirical experiments to study two different biases and their interactions:</p>
+
+<ul>
+<li><strong>dark-is-more-bias</strong>: People tend to associate dark colors with higher values</li>
+
+<li><strong>opaque-is-more-bias</strong>: People tend to associate more colors with higher values</li>
+</ul>
+
+<p>Background colors also affect the association. Thus, graphs that leverage these biases are read quicker. To study the interaction of these biases with the background, various factors of static charts were independently varied as described below:</p>
+
+<p><img src="http://web.cse.ohio-state.edu/~rahman.92/pics/vis/colormap.png" alt="image" /></p>
+
+<p>Results show that on lighter backgrounds, these biases work together, while on darker backgrounds, the opaque is more bias can cancel out the dark is more bias. Hence, to leverage these biases on any background, graphs should not use color maps that vary in opacity and darker colors should encode higher values.</p>
+
+<h4 id="designexpositionwithliteratevisualizationhttpopenaccesscityacuk200811wood_literate_2018pdfbyjowoodalexanderkachkaevjasondykes"><a href="http://openaccess.city.ac.uk/20081/1/wood_literate_2018.pdf">Design Exposition with Literate Visualization</a> by Jo Wood, Alexander Kachkaev, Jason Dykes</h4>
+
+<p>This is an interesting paper on documenting the rationale for design decisions during visualization construction (similar to Jupyter Notebooks for visualizations), based on Donald Knuth's <a href="https://en.wikipedia.org/wiki/Literate_programming">literate programming paradigm</a>). Design exposition (DE) refers to the process of articulating design rationales. The authors identify four types of visualization creators based on their design exposition behavior:</p>
+
+<p><img src="http://web.cse.ohio-state.edu/~rahman.92/pics/vis/de_types.png" alt="image" /></p>
+
+<p>Thus, the exposition process is either shallow, high-frequency (the autonomist), or in-depth, low-frequency (others). The ideal scenario of in-depth, high frequency requires more effort, and by doing pareto front analysis the authors find that it is more cost-effective (in terms of effort) to increase frequency than it is to increase depth and they build Litvis on this principle.</p>
+
+<p>Litvis offers affordances to guide the user to create low effort design expositions and it also provides feedback to the user by rendering the visualization, design validation and branching narratives. It uses Elm, Vega-lite and Markdown. Narrative schemas are created by linking the litvis document to a chosen schema, which prompts the user to provide explanations. Litvis comes with a set of predefined schema and allows users to create new ones. It also allows for branching narratives, where multiple documents can be linked in a branched structure in cases where multiple designs are being considered. Examples where Litvis can be used include visualization idioms, visualization idioms and <a href="http://www.kanarinka.com/wp-content/uploads/2015/07/IEEE_Feminist_Data_Visualization.pdf">feminist data visualization</a>.</p>
+
+<p><strong>Highlights of Tuesday afternoon</strong> include:</p>
+
+<h4 id="usingdashboardnetworkstovisualizemultiplepatienthistoriesadesignstudyonpostoperativeprostatecancerhttpspdfssemanticscholarorgd25915ea9b07bddad08d73f4d7db65fa744209dbpdfbyjurgenbernarddavidsesslerjornkohlhammerandroyaruddle"><a href="https://pdfs.semanticscholar.org/d259/15ea9b07bddad08d73f4d7db65fa744209db.pdf">Using Dashboard Networks to Visualize Multiple Patient Histories: A Design Study on Post-operative Prostate Cancer</a> by Jurgen Bernard, David Sessler, Jorn Kohlhammer, and Roy A. Ruddle</h4>
+
+<p>This design study resulted in the following information-heavy, yet visually pleasing chart:</p>
+
+<p><img src="http://web.cse.ohio-state.edu/~rahman.92/pics/vis/prostrate.png" alt="image" /></p>
+
+<h4 id="aheuristicapproachtovaluedrivenevaluationofvisualizationshttpswwwccgatechedutewall9mediapapersvaluevis2018pdfbyemilywallmeeshuagnihotrilauramatzenkristindivismichaelhaassalexendertandjohnstasko"><a href="https://www.cc.gatech.edu/~ewall9/media/papers/ValueVIS2018.pdf">A Heuristic Approach to Value-Driven Evaluation of Visualizations</a> by Emily Wall, Meeshu Agnihotri, Laura Matzen, Kristin Divis, Michael Haass, Alex Endert, and John Stasko</h4>
+
+<p>ICE-T is a new metric for evaluating a visualization based on its <em>value</em>, which incorporates <strong>Insights</strong> gained, the <strong>Confidence</strong> about the data, understanding of the <strong>Essence</strong> of the data, and the <strong>Time-savings</strong> achieved from the visualization. Thus, the value can be measured by:</p>
+
+<p>V = I + C + E + T</p>
+
+<p>A set of heuristics for measuring each of these components was developed, through literature review, followed by brainstorm sessions, workshop, affinity diagramming and finally empirical testing. Each component is broken down into mid-level guidelines, each of which has a set of heuristics. Each heuristic is rated on a 1-7 scale with 1 = strongly disagree and 7 = strongly agree. To evaluate this evaluation methodology, 15 visualization experts were recruited and asked to rate three visualizations using the ICE-T questionnaire. There was high inter-rater agreement on the overall rating (average of the four components), indicating ICE-T is effective. At the component level, there was agreement for all but the essence metric. Results of power analysis show that having five raters would be sufficient for evaluation. The survey form can be found <a href="http://visvalue.org/">here</a>.</p>
+
+<p><img src="http://web.cse.ohio-state.edu/~rahman.92/pics/vis/ice-t.png" alt="image" width ="100%"/></p>
+
+<h4 id="patternsandpacequantifyingdiverseexplorationbehaviorwithvisualizationsonthewebhttpswebcswpiedutltharrisondocsfeng2018patternspdfbymifengevanpecklaneharrison"><a href="https://web.cs.wpi.edu/~ltharrison/docs/feng2018patterns.pdf">Patterns and Pace: Quantifying Diverse Exploration Behavior with Visualizations on the Web</a> by Mi Feng, Evan Peck, Lane Harrison</h4>
+
+<p>Two novel metrics for evaluating a visualization are proposed: exploration-uniqueness and exploration pacing.</p>
+
+<ul>
+<li><strong>Exploration-uniqueness</strong>: This metric aims to capture the diversity of exploration patterns. The term-frequency, inverse-document frequency (<a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF metric</a>) for information retrieval is adapted for measuring unique exploration patterns. A group of users interacting with a visualization is modeled as a matrix, with each row representing a user and each column representing an element in the user. TF-IDF is calculated for user-element pairs. The TF is measured as the time spent on an element by the user divided by the total time spent on the visualization. The IDF is measured as log of total users divided by number of users that interacted with the element. The uniqueness of a user is then calculated by aggregating their TF-IDF over all visited elements.</li>
+
+<li><strong>Exploration-pacing</strong>: This metric aims to capture how quickly the user is moving through elements in the visualizations. Continuous Wavelet Transformation (<a href="https://en.wikipedia.org/wiki/Continuous_wavelet_transform">CWT</a>) is used for modeling this. The user’s interaction with an element is captured as a sequence of sampled signals (one if the user is interacting with the element and zero otherwise). CWT is applied to these sequences and they are transformed to a wavelet power spectrum. The average power over time, normalized by a high frequency range is used to measure the exploration pacing.</li>
+</ul>
+
+<p>While these metrics reveal facets of the user behavior and can be used as features for machine-learning models trying to predict user goals, they cannot be used to measure a visualization per se. What does it mean if a visualization has more unique exploration patterns or users with higher frequency of exploration? </p>
+
+<h4 id="idmvistemporaleventsequencevisualizationfortype1diabetestreatmentdecisionsupporthttpswwwresearchgatenetprofileyixuan_zhang25publication327125724_idmvis_temporal_event_sequence_visualization_for_type_1_diabetes_treatment_decision_supportlinks5b845a44a6fdcc5f8b6b5401idmvistemporaleventsequencevisualizationfortype1diabetestreatmentdecisionsupportpdfbyyixuanzhangkartikchananaandcodydunne"><a href="https://www.researchgate.net/profile/Yixuan_Zhang25/publication/327125724_IDMVis_Temporal_Event_Sequence_Visualization_for_Type_1_Diabetes_Treatment_Decision_Support/links/5b845a44a6fdcc5f8b6b5401/IDMVis-Temporal-Event-Sequence-Visualization-for-Type-1-Diabetes-Treatment-Decision-Support.pdf">IDMVis: Temporal Event Sequence Visualization for Type 1 Diabetes Treatment Decision Support</a> by Yixuan Zhang, Kartik Chanana, and Cody Dunne</h4>
+
+<p>This paper describes a design study for diabetes clinical decision support, which led to the following visualization:</p>
+
+<p><img src="http://web.cse.ohio-state.edu/~rahman.92/pics/vis/idmvis.png" alt="image" /></p>
+
+<p><strong>Wednesday's highlight</strong> was a <strong>color panel</strong> featuring the five speakers: </p>
+
+<ul>
+<li><strong>Andrew Stockman - Color from Eye to the Brain (<a href="http://www.cvrl.org/">cvrl.org</a>)</strong>: Colors are trichromatic, i.e., they can be described by three variables. Photoreceptors are univariate, with only one photoreceptor we are colorblind. Color is encoded by comparing the outputs of different cone types. In chromatic pathways, color is secondary to luminance, i.e, the chromatic component can be blurred without any perceivable change to the visualization. </li>
+
+<li><strong>Roxana Bujack - Color, Math, and Me</strong>: Color space is non-Euclidean, it violates the triangle inequality. This is evident through <em>hue superimportance</em>, where the circumference of a hue circle appears to be twice its actual length, and <em>the law of diminishing returns in color-difference perception</em>, where if A,B,C are equally placed along the geodesic then the perceived difference between AC is less than twice that of AB or BC. To get around this, we transform to Euclidean space, which works for small distances but not for larger ones. Hence, we need algorithms that work in non-Euclidean space.</li>
+
+<li><strong>Karen Schloss - Color Cognition</strong>: People are slow in identifying color if a bar chart color does not match the color of the fruit in its label. We need a color inference framework with color concept association. The system should be discriminable, preferable and interpretable. There is empirical work required to find people's color associations and preference (you can predict color preference by how many objects of that color one likes). There is a dissociation between what people think they should do and what they actually do. Colors are more than just perceptual experiences.</li>
+
+<li><strong>Lyn Bartram - Perceptual and Affective Color</strong>: Visual language is informative, expressive and directive. While cognition caters to reason, affect caters to experience. Affective color refers to patterns of colors for expressing emotions (exciting vs. calm, negative vs. positive). Visualization palettes for affect are hand built.  We need to extend visual language to incorporate affect. Affect without effect is meaningless while effect without affect is a missed opportunity.</li>
+
+<li><strong>Francesca Shamsel - Artistic Color Theory (<a href="https://sciviscolor.org/">sciviscolor.org</a>)</strong>: Artists know how to express affect, which is studied in artistic color theory. Color is a whole separate language for artists, rich in vocabulary and tone. Overall voice of a visualization can still convey a message without being loud. Challenges in the visualization community include tapping into the knowledge that artists have on the language of color to create visualizations that tell stronger stories.</li>
+</ul>
+
+<p><strong>Thursday morning's</strong> sessions covered designs for interactive analytics:</p>
+
+<h4 id="aninteractivemethodtoimprovecrowdsourcedannotationshttpwwwshixialiucompublicationslabelinspectpaperpdfbyshixialiuchangjianchenyafenglufangxinouyangbinwang"><a href="http://www.shixialiu.com/publications/LabelInspect/paper.pdf">An Interactive Method to Improve Crowdsourced Annotations</a> by Shixia Liu, Changjian Chen, Yafeng Lu, Fangxin Ouyang, Bin Wang</h4>
+
+<p><img src="http://web.cse.ohio-state.edu/~rahman.92/pics/vis/crowd.png" alt="image" /></p>
+
+<p>Data quality is an essential requirement. Workers can be unreliable when crowdsourcing data quality. This paper proposes a system that uses visual analytics to improve crowdsourced data in an iterative and progressive manner. The system has four coordinated views as shown in the image above - a confusion matrix to identify classes to inspect, an instance visualization to see instances in context and select misclassified ones, a worker visualization to see the workers who made the misclassification and adjust their reliability score, and finally a validation visualization to show instances which have been validated and how they influence other instances. Case studies measuring model score vs. analyst effort were done to evaluate the system.</p>
+
+<h4 id="regressionexplorerinteractiveexplorationoflogisticregressionmodelswithsubgroupanalysishttpsieeexploreieeeorgstampstampjsptparnumber8464305bydennisdingenmarcelvantveerpatrickhouthuizenevelinehjmestromerikhhmkorstenarthurrabouwmanandjarkevanwijk"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8464305">RegressionExplorer: Interactive Exploration of Logistic RegressionModels with Subgroup Analysis</a> by Dennis Dingen, Marcel van ’t Veer, Patrick Houthuizen, Eveline H. J. Mestrom, Erik H.H.M. Korsten, Arthur R.A. Bouwman, and Jarke van Wijk</h4>
+
+<p><img src="http://web.cse.ohio-state.edu/~rahman.92/pics/vis/regression.png" alt="image" /></p>
+
+<p>In medical settings, variable selection is done manually based on educated guesses. Regression explorer is built to help the analyst select variables, look at their interactions, and do subgroup analysis. Univariate variables are automatically suggested, with color denoting their importance. As the analyst selects multiple variables the suggestions are updated. The speaker argued that manual selection is required for explainability, however methods such as LASSO still maintain explainability. Could this system be used for visualizing the selected variables in LASSO?</p>
+
+<h4 id="clustrophile2guidedclusteranalysishttpsarxivorgpdf180403048pdfbymarcocavalloandcagataydemiralp"><a href="https://arxiv.org/pdf/1804.03048.pdf">Clustrophile 2: Guided Cluster Analysis</a> by Marco Cavallo and Cagatay Demiralp</h4>
+
+<p><img src="http://web.cse.ohio-state.edu/~rahman.92/pics/vis/clustrophile.png" alt="image" /></p>
+
+<p>When clustering high-dimensional data there is no ground truth. The user needs guidance in selecting features, number of clusters and sampling/projection parameters. Further, there is a question of if the cluster makes sense mathematically - are they interpretable, valid (well separated) and robust. Clustrophile uses user feedback to provide similar clusters by comparing difference in cluster outcome, cluster parameters and cluster score (separation).</p>
+
+<p><strong>Thursday afternoon</strong> had sessions focused on perception and cognition:</p>
+
+<h4 id="mitigatingtheattractioneffectwithvisualizationshttpshalinriafrhal01845004v2documentbyevanthiadimaragillesbaillyanastasiabezerianosandstevenfranconer"><a href="https://hal.inria.fr/hal-01845004v2/document">Mitigating the Attraction Effect with Visualizations</a> by Evanthia Dimara, Gilles Bailly, Anastasia Bezerianos, and Steven Franconer</h4>
+
+<p>Decision makers are often affected by the <strong>attraction bias</strong>, where when choosing between two incomparable options, a target and a competitor, the target is made to look more appealing by planting dominated decoys around it. A dominated decoy refers to an object that is inferior to the target in all attributes. For example, in the image below, Bob and Alice are incomparable: Bob has superior education while Alice has superior crime control experience. Eve is a dominated decoy because she almost matches Alice, but is slightly inferior (lower crime control experience). By placing Eve in the mix, Alice looks more attractive, and people are more likely to choose her over Bob than if they were just picking between Bob and Alice. This is irrational, because adding Eve does not change the qualifications of Bob and Alice, who remain incomparable.</p>
+
+<p><img src="http://web.cse.ohio-state.edu/~rahman.92/pics/vis/attraction.png" alt="image" /></p>
+
+<p>In the above example, Alice and Bob refer to the pareto front, where they are optimal choices, not dominated by other points. The attraction effect can be tested on scatterplots where by placing more dominated decoy points near a pareto front item makes them more likely to select that point. To mitigate this effect, the authors run two experiments. The first one, referred to as the pareto experiment, explicitly highlights the pareto items and lets participants know that the highlighted points are equivalently optimal. Results show that this minimizes the attraction effect.</p>
+
+<p>The next experiment uses the elimination by aspects(EBA) of decision theory. In this strategy, sub-optimal choices are eliminated one by one, allowing the user to consider individual trade-offs. The deletion experiment, therefore, asks users to make their selection by deleting all points but their selection. Results show that this strongly minimizes attraction effect, which makes sense because users can explicitly remove decoys.</p>
+
+<h4 id="optimizingcolorassignmentforperceptionofclassseparabilityinmulticlassscatterplotshttpwwwyunhaiwangorginfovis18colorviscolorpdfbyyunhaiwangxinchentonggechenbaomichaelsedlmairchiwingfuoliverdeussenandbaoquanchen"><a href="http://www.yunhaiwang.org/infovis18/color/vis-color.pdf">Optimizing Color Assignment for Perception of Class Separability in Multiclass Scatterplots</a> by Yunhai Wang, Xin Chen, Tong Ge, Chen Bao, Michael Sedlmair, Chi-Wing Fu, Oliver Deussen and Baoquan Chen</h4>
+
+<p>Default color assignments for scatterplots often do not optimize for perceived class separability. For example, two classes that have a high degree of overlap in scatterplot points should be assigned more distinct colors, while well separated colors can have more similar colors without confusing the user. Ranking all possible color assignments can be computationally expensive for a large number of classes. </p>
+
+<p>They extend the "average class proportion of 2 nearest neighbor of each point in target class" (KNNG) metric for quantifying class separability. An objective function measuring point distinctness and background contrast is used to find the optimal color assignment. A genetic algorithm is used where random permutations of color are initially generated and evaluated. The algorithm iteratively improves by performing selection (through a roulette wheel), crossover(colors are exchanged between candidates), and mutation(colors within the same permutation are swapped). This algorithm is able to assign colors to 15 classes within 2.5 secs.</p>
+
+<h4 id="looksgoodtomevisualizationsassanitycheckshttphdccsarizonaedupapersinfovis_2018_sanitycheckpdfbymichaelcorrellmingweiligordonkindlmannandcarlosscheidegger"><a href="http://hdc.cs.arizona.edu/papers/infovis_2018_sanitycheck.pdf">Looks Good To Me: Visualizations As Sanity Checks</a> by Michael Correll, Mingwei Li, Gordon Kindlmann, and Carlos Scheidegger</h4>
+
+<p>Certain visualizations are more effective at conveying peculiarities of the data. This work provides empiric results on the optimal visualization for highlighting a salient feature. There are two types of confounders in a visualization: a <strong>confuser</strong>, where in there is a significant change in the data, but this was hidden in the visualization, and a <strong>hallucinator</strong> wherein there is no issue in the data but a change appears in the visualization. For a given dataset, noise is first introduced and then parameters of the visualization (number of histogram bins, KDE bandwidths and dot plot radii) are exhaustively searched to find one that hides the flaw. Per pixel CIELAB color difference between original and flawed is used as proxy for how well the flaw is hidden (smaller difference indicates well-hidden and hence a more successful attack).</p>
+
+<p><img src="http://web.cse.ohio-state.edu/~rahman.92/pics/vis/sanity.png" alt="image" /></p>
+
+<p>They find that no single visualization is better for all data quality issues. An interesting next step would be to statistically identify data quality issues and select the appropriate visualization for the user to validate it.</p>
+
+<h4 id="ataglancepixelapproximateentropyasameasureoflinechartcomplexityhttpsarxivorgpdf181103180pdfbygabrielryanabigailmoscaremcochangeugenewu"><a href="https://arxiv.org/pdf/1811.03180.pdf">At a Glance: Pixel Approximate Entropy as a Measure of Line Chart Complexity</a> by Gabriel Ryan, Abigail Mosca, Remco Chang, Eugene Wu</h4>
+
+<p>When looking at charts in medical settings, decisions are made quickly "at-a-glance". In these settings, it is imperative that charts are simple and easy to read. As a result, we need a measure to quantify the complexity of the chart. The metric should be correlated with perceived complexity, correlated with noise-level, predictive of perceptual accuracy, simple to measure and widely applicable. To satisfy these criteria, pixel approximate entropy is proposed and it is validated through a user study.</p>
+
+<p>The conference ended on <strong>Friday</strong>, with a keynote by Joachim Buhmann who argued that we do not need to understand data-driven algorithms, we just need to be able to control them. The highlights of Friday, however were talks on uncertainty visualization and externalizing implicit error.</p>
+
+<h4 id="inpursuitoferrorasurveyofuncertaintyvisualizationevaluationhttpsgithubcomjhullmanuncertaintyvisevalblobmasteruncertainty_vis_evalpdfbyjessicahullmanxiaoliqiaomichaelcorrellalexkalematthewkay"><a href="https://github.com/jhullman/uncertaintyVisEval/blob/master/uncertainty_vis_eval.pdf">In Pursuit of Error: A Survey of Uncertainty Visualization Evaluation</a> by Jessica Hullman, Xiaoli Qiao, Michael Correll, Alex Kale, Matthew Kay</h4>
+
+<p>In this survey paper, different methods of uncertainty visualization are covered and nicely summarized in the following visualization. A key takeaway was the action-accuracy gap, where users identify the uncertainty in a visualization, but are not clear/convinced to act on it.</p>
+
+<p><img src="http://web.cse.ohio-state.edu/~rahman.92/pics/vis/uncertainty.png" alt="image" /></p>
+
+<h4 id="aframeworkforexternalizingimpliciterrorusingvisualizationhttpsciutahedutvdlpapers2018_infovis_ieframeworkpdfbyninamccurdyjuliegerdesmiriahmeyer"><a href="http://sci.utah.edu/~vdl/papers/2018_infovis_IE-Framework.pdf">A Framework for Externalizing Implicit Error Using Visualization</a> by Nina McCurdy, Julie Gerdes, Miriah Meyer</h4>
+
+<p>While creating a visualization to characterize Zika outbreaks in South America, it was found that domain experts have different knowledge of the data, which is not reflected. For example, even though Brazil appears to have a higher number of outbreaks than Columbia, Brazil reports all cases while Columbia does more investigation. This sort of qualitative knowledge is in the head of experts and is referred to as <em>implicit error</em> in the data. Implicit errors can have different attributes, such as the <em>type</em> of error (missing vs. random), <em>direction</em>, <em>size</em>, <em>confidence</em> (of the expert), and <em>extent</em> (number of measurements that are impacted). </p>
+
+<p>To account for these, experts are allowed to provide structured annotations that fill in these error attributes which are then propagated back to the visualization. </p>
+
+<p><img src="http://web.cse.ohio-state.edu/~rahman.92/pics/vis/implicit.png" alt="image" /></p>
+
+<h4 id="visTakeaways">Takeways</h4>
+<p>The work on externalizing error is very exciting work because it highlights the knowledge in the heads of experts and the need for tools that allow them to better express it and to interact with the data (a problem that <a href="http://web.cse.ohio-state.edu/~rahman.92/icarus.html">icarus</a> also looks at). In the user studies, the authors find that interacting with the data makes the experts think more deeply about the causes for the errors. Thus, interaction is a necessity and coming up with rules and annotations apriori do not work. The framework described here requires continuous interaction with experts to build a custom tool to capture their knowledge. Can we build tools that automatically do this without requiring back and forth between data scientists and experts? Can expert annotation be automatically structured and applied to the data (e.g. a Litvis for domain expert knowledge)?</p>
+
+<p>Another exciting area is the work on sanity checks through visualizations. Can we automatically identify data quality issues and then specify constraints for their visualizations in Draco to ensure the user is able to perceive them?</p>
+</div>
+<hr>
+<div id='berlin'>
+<h2>Berlin</h2>
+<p>My second big trip this year was Berlin, Germany which hosted IEEE VIS. I only spent one day sighseeing, since the hotel was located 30mins away from downtown (and the conference surprisingly had many interesting talks).</p>
+<h3>Cormenius Garten</h3>
+This was a random garden located close to the hotel and was one of the recommended sights on the conference website. It literally had one statue in a small stretch of grass, so there you go:<br><br>
+<img  border ="1" src="pics/berlin/cormenius.jpg"  height = '300px'>
+<h3>Bradenburg Gate</h3>
+The Bradenburg Gate is Berlin's biggest tourist attraction (you can read about its historical significance on <a href="https://en.wikipedia.org/wiki/Brandenburg_Gate">wikipedia</a>). Its a grand structure with statues in between walls:<br><br>
+<img  border ="1" src="pics/berlin/bradenburg.jpg"  height = '300px'> 
+<img  border ="1" src="pics/berlin/bradenburg_2.jpg"  height = '300px'>
+<h3>Reichstag Building</h3>
+Cool building two steps away from the Bradendburg gate:<br><br>
+<img  border ="1" src="pics/berlin/reichstag.jpg"  height = '300px'>
+<h3>World War 2 Memorial</h3>
+Self Explanatory.<br><br>
+<img  border ="1" src="pics/berlin/ww2.jpg"  height = '300px'>
+<h3>Tiergarten</h3>
+One end of this garden has the Bradenburg Gate while the other has the Victory Column. The Victory Columns was too far to visit, so here are random fall pictures from the garden.<br><br>
+<img  border ="1" src="pics/berlin/tg_1.jpg"  height = '300px'>
+<img  border ="1" src="pics/berlin/tg_2.jpg"  height = '300px'>
+<img  border ="1" src="pics/berlin/tg_3.jpg"  height = '300px'>
+<img  border ="1" src="pics/berlin/tg_4.jpg"  height = '300px'>
+<h3>City Hall</h3>
+Passed by city hall on my way to find a Starbucks to charge my phone:<br><br>
+<img  border ="1" src="pics/berlin/city_hall.jpg"  height = '300px'>
+<h3>Neptunbrunnen</h3>
+This was right opposite city hall, and even though I didn't realize it at the time, its a famous fountain of Neptune:<br><br>
+<img  border ="1" src="pics/berlin/neptune.jpg"  height = '300px'>
+<h3>Berlin Cathedral</h3>
+Not a fan of the gold and turquiose combination, but pretty otherwise:<br><br>
+<img  border ="1" src="pics/berlin/cathedral.jpg"  height = '300px'>
+<h3>Altes Museum</h3>
+I dont understand why museums have to close at 6pm, since they dont require sunlight to be enjoyable. I only had an hour and hence could visit only one of the four museums on museum island.<br>
+Here is a vase that reminds me of John Keats' <a href="https://www.poetryfoundation.org/poems/44477/ode-on-a-grecian-urn">Ode on a Grecian Urn</a> that we had to study in high school:<br><br>
+<img  border ="1" src="pics/berlin/grecian_urn.jpg"  height = '300px'><br><br>
+Statue of Athena, my favorite greek goddess:<br><br>
+<img  border ="1" src="pics/berlin/athena.jpg"  height = '300px'><br><br>
+Olden jewellery from Egypt, Rome and Greece, respectively (Egypt is my favorite):<br><br>
+<img  border ="1" src="pics/berlin/egypt_jewel.jpg"  height = '300px'>
+<img  border ="1" src="pics/berlin/roman_jewel.jpg"  height = '300px'>
+<img  border ="1" src="pics/berlin/greek_jewel.jpg"  height = '300px'>
+</div>
+<hr>
+
+
+<div id='vldb2018'>
+<h2 id="vldb2018">VLDB 2018</h2>
+
+<p>I did not attend much of the conference, since the first two days I was too worried about my <a href="https://go.osu.edu/icarus">talk</a> and I had to reschedule sightseeing to the third conference day (as opposed to the day after, since I risked missing my flight otherwise). All in all, it was a pretty exhausting trip, and I only remember the keynote and a workshop session I attended.</p>
+
+<h4 id="keynotereneemiller">Keynote - Renee Miller</h4>
+
+<p>The conference began with a keynote by Renee Miller on leveraging open data, to provide timely, comprehensive and complete information. The tables are wide(over 16 attributes) and deep (over 1500 rows), and they often do not have headers. There are two problems to address: finding joinable tables and finding unionable tables.</p>
+
+<p><strong>Join Table Search:</strong> The goal here is to enable data scientists to interactively search tables that join with the current table, so that they can find other attributes that are relevant to the current problem. Given a join attribute, a join goodness metric is calculated, which measures the number of joinable rows. Tables with a containment (overlap) over a threshold are returned. Minhash LSH is used to estimate containment.</p>
+
+<p><strong>Union Table Search:</strong> Here we want to find tables that union with the current one, perhaps to see if models generalize across datasets. Two tables are unionable if they hold similar information, even if they have different headers. There are three domains to consider, when trying to find unionable tables:</p>
+
+<ul>
+<li>Set domain - This looks at simple attribute overlap</li>
+
+<li>Natural language domain - This matches tables based on similarity in attribute names, using word embeddings</li>
+
+<li>Semantic domain - This infers if two attributes refer to the same thing by classifying attributes and looking at class overlap between tables.</li>
+</ul>
+
+<p>Ensemble unionability infers which domain to use by scoring on all and choosing the best.     </p>
+
+<p>How can domain knowledge, from a human or other data sources be incorporated into this? What if you do not have a table or attribute to start with? Can it automatically do joins and recommend tables to look at to the user? </p>
+
+<h4 id="socialcomputingforsmartcitiespanel">Social Computing for Smart Cities Panel</h4>
+
+<p><strong>Sihem Amer-Yahia, Grenoble:</strong> Algorithms for matching tasks and workers in online freelance marketplaces such as task rabbit can have bias and discrimination. French law specifically prohibits the use of 15 different attributes, which are known as protected attributes. One way to detect bias would be to see if a function perfectly partitions along one of these attributes. We need automatic ways to identify partitioning of these attributes, leading to disparity. Citizens are a great resource and we need to ensure their safety.</p>
+
+<p><strong>Elaine Rabello, Rio De Janeiro State University:</strong> Groups are more interesting than people. We need to study how groups interact, to gain better insights for maintaining better health. Health is after all a product of group interaction - studying how people behave during epidemics can be key to stopping its spread.</p>
+
+<p><strong>Gabriela Ruberg, Central Bank of Brazil:</strong> Gabriela is super excited about open data, which was evident in her talk. She discussed having standards and metadata for open data, creating an open ontology and having open licenses for projects involving open data. Engaging the society needs to be a key goal to get better data. Civic hacking/crowdsourcing can play an essential part in data quality control and integration. By engaging the society, people can tell diverse stories through data.</p>
+</div>
+<hr>
+
+
+
+
+<div id='brazil'>
+<h2>Rio De Janeiro</h2>
+<p>VLDB 2018 took place in Rio De Janeiro, Brazil. This was my first visit to South America and I must say I felt quite lost without internet and the inability to speak Portuguese. I took a half-day city tour (really full day) that covered the main highlights of the city.</p>
+<h3>Beach</h3>
+The hotel balcony overlooked the beach, which was gorgeous even on a cloudy day as you can see below:<br><br>
+<img  border ="1" src="pics/brazil/hotel.png"  height = '300px'>
+<h3>Statue of Christ Redeemer</h3>
+The first stop on the tour was Brazil's famous Christ Redeemer statue located on a mountain<br><br>
+<img  border ="1" src="pics/brazil/christ.jpeg"  height = '300px'>
+<h3>Escadaria Selarón</h3>
+The Escadaria Selarón, which consists of a set of steps made with bricks collected from around the world, was another highlight that we visited. It was the most colorful part of the tour and probably my favorite. There were street sellers around selling jewelry, t-shirts and other souvenirs.<br><br>
+<img  border ="1" src="pics/brazil/stairs_2.jpeg"  height = '300px'>
+<img  border ="1" src="pics/brazil/stairs.jpeg"  height = '300px'>
+<h3>Rio De Janeiro Cathedral</h3>
+We also made a quick step to the Rio De Janiero Cathedral, which is a pyramid shaped structure with colored windows and golden colored statues. It can apparently hold 20,000 people, although it did not look that big.<br><br>
+<img  border ="1" src="pics/brazil/cathedral.jpeg"  height = '300px'>
+<h3>Sugar Loaf Mountain</h3>
+The final stop of the tour was the sugar loaf mountains, which seemed apt since the tour ended and began wiht mountains. The sugar loaf mountains have some interesting story behind their name which I dont remember. The most exciting part of this stop was the two cable car trips it took to get up there.<br><br>
+<img  border ="1" src="pics/brazil/sugar_loaf.jpeg"  height = '300px'><img  border ="1" src="pics/brazil/view_from_mountain.jpeg"  height = '300px'>
+<br><br>
+We also passed by multiple beaches, all of which looked the same, but for some reason there was a huge price difference depending on which one your house overlooked. I squeezed in a visit to the beach at night, which had its own charm (also drinking coconut water out of a coconut is common here!).
+</div>
+<hr>
+<div id='sigmod2018'>
+<h2>SIGMOD 2018</h2>
+<p>This article contains very brief reviews of some papers from SIGMOD 2018, held in Houston (read about the tutorial we presented <a href="https://github.com/ixlab/eval">here</a>), grouped by relevance to some of my work, talks I enjoyed, papers I was curious about and my takeaways.</p>
+
+<h4 id="evaluatingvisualdataanalysissystemsadiscussionreporthttpshalinriafrhal01786507documenthildaleilanibattlemarcoangelinicarstenbinnigtizianacatarciphilippeichmannjeandanielfeketegiuseppesantuccimichaelsedlmairwesleywillett"><a href="https://hal.inria.fr/hal-01786507/document">Evaluating Visual Data Analysis Systems: A Discussion Report</a> - HILDA - Leilani Battle, Marco Angelini, Carsten Binnig, Tiziana Catarci, Philipp Eichmann, Jean-Daniel Fekete, Giuseppe Santucci, Michael Sedlmair, Wesley Willett</h4>
+
+<p>Battle et al. highlight the different approaches for benchmarking in the database and visualization communities and discuss approaches for arriving at a standard. They layout a vision for a central trace repository for evaluating visual analytics systems. Traces from different applications and tasks have different formats and often do not come with metadata. This makes it difficult to reproduce results or draw conclusions from them. Hence there is a need for a common trace repository to enable sharing and interoperability. The proposed common format consists of three components:</p>
+
+<ul>
+<li>Traces, which may include system logs, audio and video recordings, and metadata such as information on the system/description of how trace is collected.</li>
+
+<li>Sessions, which can be used to link multiple traces together, and metadata on experiment conditions.</li>
+
+<li>Experiments, which can be used to connect sessions together and provide details on experiment protocols.</li>
+</ul>
+
+<p>I think coming up with a standard reporting format for traces is an important first step in creating a benchmark for these systems, since they are heavily user driven.</p>
+
+<h4 id="cleaningdatawithconstraintsandexpertsdancehttpslavanovcomresearchwebdb18pdfwebdbahmadassaditovamiloslavanovgorodov"><a href="http://slavanov.com/research/webdb18.pdf">Cleaning Data with Constraints and Experts - Dance</a> - WebDB - Ahmad Assadi, Tova Milo, Slava Novgorodov</h4>
+
+<p>Dance is a system that employs experts to clean data. They identify suspicious tuples based on constraint violations. To determine which questions should be prioritized when asking experts, a tuple graph is built, where each node corresponds to a suspicipous tuple and edges exist between tuples who affect each other. Tuples affect each other if validating one, removes suspicion from the other. Edges are weighted according to the uncertainty of tuples. Experimental results show that Dance performs better than random and two older versions of Dance. However, latency in generating questions can take upto 30seconds, which can be frustrating to the user. User studies are required to ensure this is not problem, especially if users are required to answer 162 questions in a session.</p>
+
+<h4 id="dataprofhttpsdlacmorgcitationcfmid3193544demozihengweisebastianlink"><a href="https://dl.acm.org/citation.cfm?id=3193544">DataProf</a> - DEMO - Ziheng Wei, Sebastian Link</h4>
+
+<p>DataProf separates data-driven cleaning and constraint-based data profiling. The system has two views - one for data stewards to see discovered constraints and another for domain experts to see samples containing violations. Null values are ignored when discovering constraints. The samples shown to the user are Armstrong samples i.e. all constraints that hold on the dataset also hold on the sample, and it is the minimum such sample. Thus, any violations in the data will be present in the sample. The iterative process requires data stewards and experts to work together, and requires switching between views. The interface could be improved.</p>
+
+<h4 id="autodetecthttpswwwmicrosoftcomenusresearchuploadsprod201804autodetectpdfzhipenghuangyeyehe"><a href="https://www.microsoft.com/en-us/research/uploads/prod/2018/04/AutoDetect.pdf">Auto-Detect</a> - Zhipeng Huang, Yeye He</h4>
+
+<p>Approaches for detecting errors within a single column have mostly involved rule-based heauristics. In this work, Huang and He instead detect errors by leveraging a large table corpora. They extract 350M columns that are relatively clean and use co-occurence statistics of values in the same column to determine if they are compatible. Since it is impossible for all possible values to co-occur in the corpus, they generalize values to patterns using a set of generalizing languages. The generalization languages are chosen based on expected precision and then aggregated using thresholding algorithm. Further, count-min sketch is used to reduce the memory footprint. In experiments, 100 samples are manually validated for precision scores. There is scope for extending this work to show the user reasoning behind how an error was corrected.</p>
+
+<h4 id="maverickdiscoveringexceptionalfactsfromknowledgegraphshttprangerutaedutclipubs2018mavericksigmod18zhangpdfgenshengzhangdamianjimenezchengkaili"><a href="http://ranger.uta.edu/~cli/pubs/2018/maverick-sigmod18-zhang.pdf">Maverick: Discovering Exceptional Facts from Knowledge Graphs</a> - Gensheng Zhang, Damian Jimenez, Chengkai Li</h4>
+
+<p>Maverick is a system that finds exceptional facts such as "Denzel Washington is the second African-American to win an academy award" on knwledge graphs. This has applications in news reporting and data cleaning, where wrong exceptional facts, example "Hilary Clinton is the first female presidential nominee", denote gaps in knowledge, i.e., no database entry for Victoria Woodhull's nomination. Maverick, takes as input a exceptionality scoring function and uses beam search to find top k highest scoring attribute-context pairs. Attributes refer to graph edges while contexts refer to sequence of entities that match a pattern. The paper does not contribute to exceptionality, many of which have already been defined in prior work. They explain their concepts with regards to the one-of-few metric i.e. a fact is exceptional if it is true for few entities. The Maverick algorithm is a nested loop that iterates for a given number of iterations, where the first loop evaluates viable contexts based on a pattern, while the second loop evaluates exceptionality evaluatuation(EE) scores for subspaces that match the given context. In the sceond loop, to avoid exhaustive enumeration of subspaces, which is exponential, subspaces are enumerated in descending order of the upper bound of their EE scores, and pruned if the upper bound is not greater than the min score of the kth ranked subspace. The user is required to provide an upper bound funtion with the exceptionality function.  The pattern generator then finds children patterns of the given pattern based on matches. The children patterns are further pruned based on heuristics.</p>
+
+<h4 id="towardsaunifiedrepresentationofinsightinhumanintheloopanalyticsauserstudyhttpsdlacmorgcitationcfmid3209912hildaeserkandoganulrichengelke"><a href="https://dl.acm.org/citation.cfm?id=3209912">Towards a Unified Representation of Insight in Human-in-the-Loop Analytics: A User Study</a> - HILDA - Eser Kandogan, Ulrich Engelke</h4>
+
+<p>Kandogan and Engelke conduct a large user study, 7 charts, with 3 tasks each with the aim of formalizing what users consider insight and how it is communicated between the system and the human. They recruited 129 participants via email. 7 charts based on the cars dataset was used, which covered different kinds of insights. The 3 tasks revolved around insight verification, free form exploration and task driven exploration. They analyzed 2487 responses. For bar charts, insights involved estimated numeric values, ranges and inequalities. For line charts, insights were reported as comparison between series. Pie chart insights consisted of proportions. For scatter plots, insights from linear functions were similar to those of line charts, while for clusters, insights included density, volume, outliers, etc. Insight is then formalized as a dataset that is represented as a graph on which queries are applied to get a subset of the data, on which functions are applied to represent insight. This paper attempts to formalize insight, which I think is an important step when trying to evaluate human-in-the-loop system. However, their formalization of it is a function on the graph representation of the dataset, which seems rather obvious - insights usually involve statistics such as averages, trends and outliers, which can all be represented as mathematical functions. I am unclear on why 2487 responses to user studies was required for this. It would be nice to more transparently see how these studies informed this formalization or perhaps doing a validation study on different datasets/charts to see if those insights can be expressed in that model. </p>
+
+<h4 id="provenanceforinteractivevisualizationshttpsarxivorgpdf180502622pdfhildafotispsallidaseugenewu"><a href="https://arxiv.org/pdf/1805.02622.pdf">Provenance for Interactive Visualizations</a> - HILDA - Fotis Psallidas, Eugene Wu</h4>
+
+<p>Provenance refers to tracing the history/lineage of an item. In the context of data, this refers to the functions/transformations it went through to arrive at its current state. This work discusses how data-driven applications can be optimized by leveraging provenance engines. First, how interactions on visualizations can be expressed in terms of provenance queries is described. A selection on a visualization can be used to filter data and explore more details for that subset. This is equivalent to a backward trace in provenance applications, where the data points that contributed to that area, i.e., input states, of the visualization is required. For linked brushing, an interaction involves a backward trace to filter the relevant data points, followed by a forward trace to highlight the selected points, while for crossfiltering, recomputation is done on the provenance(input states) to update the visualization in other dimensions. Next, new applications in using provenance for visualizations is higlighted. </p>
+
+<ul>
+<li><strong>Explainability</strong>: An obvious one would be to explainability and answering why-not(i.e. why is a data point missing) questions of users. This is an important goal, since visualizations are meant for exploration and understandability, hence answering such questions are key. </li>
+
+<li><strong>Interoperability</strong>:Using provenance also allows for multi application linking among those that share datapoints, since provenance information can be shared among applications allowing for interoperability. </li>
+
+<li><strong>Provenance of Interactions</strong>: Interactions themselves serve as input, apart from the data, and their interactions can be tracked too. </li>
+
+<li><strong>Interaction-by-example</strong>: This allows for interaction-by-example systems, similar to query-by-example, where based on an interaction provenance information is generated. </li>
+
+<li><strong>Application Design Search</strong>: Provenance interactions can be used to find other applications that have similar workflows, and their design methodologies can be used.</li>
+
+<li><strong>Restyling Visualization</strong>: Visualization can be tweaked by changing steps in provenance. For example, not only changing chart type, but also changing functions such as max to an average.
+This is an interesting vision paper, and I am excited for each of these ideas to be fleshed out.</li>
+</ul>
+
+<h4 id="divehttpswwwusedivecomassetsdive_hilda_2018pdfhildakevinhudianaorghiancsarhidalgo"><a href="https://www.usedive.com/assets/DIVE_HILDA_2018.pdf">Dive</a> - HILDA - Kevin Hu, Diana Orghian, César Hidalgo</h4>
+
+<p>Dive is a system that allows users to analyse data quicker by allowing users to load, explore, visualize and perform statistical analyses on the same interface. Visualizations are recommended to users based on its relevance score to user selected fields. Entropy, normality and descriptive statistics such as average, min, max are calculated and displayed for each visualization. Its evaluated against excel through a 67 person between-subject usability study, which shows that users utilizing dive had faster task completion time and more users were able to complete tasks on dive as opposed to excel. The main contribution of this work is that it allows users with limited programming abilities (i.e. excel users) to perform advanced analytics. </p>
+
+<h4 id="videttehttpsdlacmorgcitationcfmid3209907hildakonstantinoszarifisyannispapakonstantinou"><a href="https://dl.acm.org/citation.cfm?id=3209907">Vidette</a> - HILDA - Konstantinos Zarifis, Yannis Papakonstantinou</h4>
+
+<p>Vidette is a system that augments interactive jupyter notebooks with interactive visualizations, i.e., it allows non-technical users to make selections on visualizations which automatically updates any dependent visualizations. This is done through detecting changes in visual units, which is a construct that takes the state of the visualization and renders it, where a state can be expressed as the value of a variable.</p>
+
+<h4 id="acceleratinghumanintheloopmachinelearninghttpsarxivorgabs180405892deemdorisxinlitianmajialinliustephenmackeshuchensongadityaparameswaran"><a href="https://arxiv.org/abs/1804.05892">Accelerating Human-in-the-loop Machine Learning</a> - DEEM - Doris Xin, Litian Ma, Jialin Liu, Stephen Macke, Shuchen Song, Aditya Parameswaran</h4>
+
+<p>The iterative nature of machine learning requires ML developers to go make incremental changes to parameters and rerun their whole pipeline. While steps have been taken to optimize the pipeline, they do not account for reducing the time of the developer. Helix is a system that attempts to address these challenges. Helix consists of a programming interface, a DAG optimizer and a materialization optimizer. The programming interface uses a domain specific language embedded in Scala to maintain human readability. Components of the workflow are represented in a DAG. This is used to find operators that have changed since the last iteration and need to be recomputed. Redundant operators are pruned. The DAG optimizer decides the optimal set of operators that need to be loaded from disk as opposed to recomputed, since in some cases its quicker to load inputs recompute that load large outputs. This is modeled as optimal state(compute, load, prune) assignment to the DAG. The materialization optimizer determines which intermediate results to persist to disk, based on probability of use in future iterations, given storage constraints. Preliminary results show that Helix performs an order of magnitude better than DeepDive and KeystoneML in cumulative runtime on classification.</p>
+
+<h4 id="humanintheloopdataanalysisapersonalperspectivehttppagescswiscedutanhaipapers1hilda18pdfhildaanhaidoan"><a href="http://pages.cs.wisc.edu/~anhai/papers1/hilda18.pdf">Human-in-the-Loop Data Analysis: A Personal Perspective</a> - HILDA - AnHai Doan</h4>
+
+<p>This was a vision talk by AnHai Doan, asking the community to focus on solving real-world end-to-end problems as opposed to narrow problems such as building systems that improve the accuracy of prior work by small margins. He further encouraged multi-disciplinary collaborations with domain scientists, in order to identify problems. There was an urge to build on existing tools such as the Python Pandas framework since this is already used many domain scientists, is easy to maintain and share and can be taught in classes as opposed to weak research prototypes. This was a very inspiring talk, with similar sentiments echoed by Jen Diettrich at the DEEM keynote. The abstract for the talk also includes a taxonomy of HILDA problems, a call to formalize human data interactions and create benchmarks for it. In the content, I found many parallels with my work with domain scientists, such as collaboratively coming to consensus on entity labeling (in my case, filling in missing data).</p>
+
+<h4 id="columnsketcheshttpsstratosseasharvardedufilesstratosfilessketchespdfbrianhentschelmichaelskesterstratosidreos"><a href="https://stratos.seas.harvard.edu/files/stratos/files/sketches.pdf">Column Sketches</a> - Brian Hentschel, Michael S. Kester, Stratos Idreos</h4>
+
+<p>Hentschel et al. introduce column sketches, an indexing structure that is workload agnostic. Prior indices are optimized for specific workload types, for example B-trees are optimal for selective queries, zone maps, column imprints and feature based data skipping require clustered data, early pruning work only for uniform data. Column sketches on the other hand provide speedups irrespective of data distribution, query selectivity and data clustering. Columns are mapped to their sketches using lossy compression maps. For numerical values, a compression map is created by creating an approximate CDF of the input and using the end points of equi-depth histograms as code markers. Frequent values are given unique codes. Given a value, the map outputs the code of the bucket it belongs to. The column sketch, thus is the output of applying the map on the column. The CDF of the base data is computed on a smaple. For categorical attributes, dictionary encoding is used, which maps every category to a numeric code. For a range query, the base data only needs to be accessed for the positions in the sketch that contain the code for the predicated endpoint. For example, if evaluating x &lt; 90 and 90 is mapped to code 10, every time 10 appears in the sketch, that base data has to be accessed. Column sketches provide 3-6 times improvement over scan for numerical and 2.7 for categorical. It performs 1.4 - 4.8 times better than other indexing structures.</p>
+
+<h4 id="biasinolapqueriesdetectionexplanationandremovalhypdbhttpsdlacmorgcitationcfmid3196914babaksalimijohannesgehrkedansuciu"><a href="https://dl.acm.org/citation.cfm?id=3196914">Bias in OLAP Queries: Detection, Explanation, and Removal - HypDB</a> - Babak Salimi Johannes Gehrke, Dan Suciu</h4>
+
+<p>Salimi et al. tackle the problem of bias in causality inference. Their motivating example is calculating the average delays between two airlines at airport COS, which UA and AA. Just computing the average delays shows that AA is the better flight, however this is incorrect because the distributions of carrier conditioned on incoming airport is different for the two airlines - AA has more flights originating from airports with fewer delays, while UA has flights originating from airports with more delays. Thus, originating airport is a confounding factor. HypDB thus, identifies these confounding factors, provides explanations for them and rewrites queries to account for them. Prior work in identifying factors requires a causal DAG which is expensive to materialize. The authors use the Neyman-Rubin Causal model to detect bias, which looks at the average treatment effect (ATE) of the treatment variable on the outcome variable. A query is unbiased w.r.t to a set of variables if the marginal distributions of the variables conditioned on different values of the treatment effect are the same. To explain bias, degree of responsiblity of a variable Z is defined, which is the normalized conditional mutual information (conditioned on Z). To resolve bias, queries are conditioned on the confounding covariates. Covariates are identified by computing the Markov-Boundary. Independence is tested through Monte-Carlo simulations. The experimental results had interesting insights on prior conclusions drawn from datasets, e.g. that Berkeley admissions are biased against females. HypDB instead reveals that females tended to apply to more competitive departments. In fact, the trend is reversed on accounting for department. In an increasingly data-driven world, this paper is an important contribution.</p>
+
+<h4 id="datadiffhttpdeliveryacmorg10114532000003193564p1769yilmazpdfip20617310622id3193564accopenkey4d4702b0c3e38b352e4d4702b0c3e38b352e4d4702b0c3e38b352e6d218144511f3437__acm__1529211637_7b187676174aa80121b2ecbd3d3f434bdemoguncesuyilmaztanawattanawaroonliqixuabhisheknigamaaronjelmoreadityaparameswaran"><a href="http://delivery.acm.org/10.1145/3200000/3193564/p1769-yilmaz.pdf?ip=206.173.106.22&amp;id=3193564&amp;acc=OPEN&amp;key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&amp;__acm__=1529211637_7b187676174aa80121b2ecbd3d3f434b">DataDiff</a> - DEMO - Gunce Su Yilmaz, Tana Wattanawaroon, Liqi Xu, Abhishek Nigam, Aaron J. Elmore, Aditya Parameswaran</h4>
+
+<p>Finding a succint representation of changes between versions of a dataset is a    hard problem. DataDiff represents these changes as sql queries as well as changes to each tuple. In the demo scenario, it is hard to verify that the changes shown are correct, since the user is not familiar with the dataset.</p>
+
+<h4 id="squidhttppeoplecsumassedutameliprojectssquidpaperssquiddemopdfdemoannafarihasheikhmuhammadsarwaralexandrameliou"><a href="http://people.cs.umass.edu/~ameli/projects/squid/papers/squid-demo.pdf">SQuid</a> - DEMO - Anna Fariha, Sheikh Muhammad Sarwar, Alexandra Meliou</h4>
+
+<p>Squid is a query by example framework that takes semantic features of the examples into account as opposed to just the structural features. The demo used the IMDB database as its use case and show that entering titles of movies returns results of movies in the same genre as opposed to all movie titles. There is an explantion plane that shows the user the inferred filter conditions that the user can edit. This helps users account for their knowledge bias - i.e. the user only lists american movies because thats all they know, but this is not an intentional filter. However, semantically related attributes have to be listed apriori by the developer/dba.</p>
+
+<h4 id="anutritionallabelforrankingshttpsarxivorgpdf180407890pdfdemokeyangjuliastoyanovichabolfazlasudehbillhowehvjagadishgeromemiklau"><a href="https://arxiv.org/pdf/1804.07890.pdf">A Nutritional Label for Rankings</a> - DEMO - Ke Yang,  Julia Stoyanovich, Abolfazl Asudeh, Bill Howe, HV Jagadish, Gerome Miklau</h4>
+
+<p>Ranking algorithms are black boxes, where it is unclear which attributes are being given most importance and if the ranking is being unfair to certain groups. Yang et al.'s system provides a solution to this by allowing the user to look deeper at the attributes feeding into the function. The user can see the contribution of each attribute on the overall function, how stable the ranking is w.r.t an attribute, and the fairness and diversity of each attribute.</p>
+
+<h4 id="buildingabwtreetakesmorethanjustbuzzwordshttpsdbcscmuedupapers2018mod342wangapdfziqiwangandrewpavlohyeontaeklimviktorleis"><a href="https://db.cs.cmu.edu/papers/2018/mod342-wangA.pdf">Building A Bw-Tree Takes More Than Just Buzz Words</a> - Ziqi Wang, Andrew Pavlo, Hyeontaek Lim, Viktor Leis</h4>
+
+<p>Wang et al. describe their efforts in implementing and optimizing Bw (buzzword) trees, which are lock free index structures. The tree consists of a mapping table that maps a node's logical id to its physical pointer. These pointers in turn link to each other by referencing the logical ids as opposed to the physical pointers (logical node). This allows for lock free access by atomically updating the physical pointer in the mapping table, in effect updating all references to that node. Each logical node consists of a base node and a delta chain. A base node can be an inner node that points to other nodes or a leaf node containing values. Delta chains are singly linked lists that contain modifications to the node. Nodes contain timestamped metadata reflecting the state of the node, to avoid workers having to replay When delta chain lengths reach a specified threshold, they are consolidated to a new base node. Optimizations suggested to the tree include pre-allocation of delta records, decentralized garbage collection, faster node consolidation and shortcuts for finding nodes through microdexing. There evaluation finds that Bw-tree performs poorly in comparison to lock-based indexes in general.</p>
+
+<h4 id="thecaseforlearnedindexstructureshttpsarxivorgpdf171201208pdftimkraskaalexbeuteledchijeffreydeanneoklispolyzotis"><a href="https://arxiv.org/pdf/1712.01208.pdf">The Case for Learned Index Structures</a> - Tim Kraska, Alex Beutel, Ed Chi, Jeffrey Dean, Neoklis Polyzotis</h4>
+
+<p>Index structures such as B-trees, hashmaps and bloom filters can be seen as models -- given a key, they predict its location or whether it exists. Taking this into consideration, Kraska et al. argue that they can be replaced by machine <em>learned</em> indexes. For range queries, they propose a recursive model hierarchical index, where each level contains multiple models, and based on the key, it is routed to the relevant model. The output of the model in a layer directly picks the model in the next layer -- each model is an "expert" for a given key space. They treat the problem of existence indexes as a binary classification problem. Results show learned indexes are faster and have a lower memory footprint.</p>
+
+<h4 id="fonduerhttpsarxivorgpdf170305028pdfsenwulukehsiaoxiaochengbradenhancocktheodorosrekatsinasphiliplevischristopherre"><a href="https://arxiv.org/pdf/1703.05028.pdf">Fonduer</a> - Sen Wu, Luke Hsiao, Xiao Cheng, Braden Hancock, Theodoros Rekatsinas, Philip Levis, Christopher Re</h4>
+
+<p>Knowledge base construction (KBC) often requires looking at other document level information rather than just the text. For example, the part name can be listed in the header, with information about part in tables in the document. Fonduer addresses this problem by using a weakly supervised multimodal model. The data model used by fonduer is a directed acyclic graph that encodes all modality semantics. They require the user to specify the target relation in which the document will be extracted. They require the user to specify matchers and throttlers which are Python functions that specify if a candidate matches a schema, or filters out candidates based on rules respectively. The system uses these functions and their LSTM for extracting information. So far it is limited to text pdf documents, and work still needs to be done in extracting from images. In terms of reducing human effort in training, they refer to <a href="https://arxiv.org/abs/1805.03818">Babble Labble</a> for providing supervision in natural language. The human effort bottle-neck is in specifying python functions for matchers and throttlers.</p>
+
+<h4 id="verdictdbhttpsarxivorgpdf180400770pdfyongjooparkbarzanmozafarijosephsorensonjunhaowang"><a href="https://arxiv.org/pdf/1804.00770.pdf">VerdictDB</a> - Yongjoo Park, Barzan Mozafari, Joseph Sorenson, Junhao Wang</h4>
+
+<p>Prior work in approximate query processing (AQP) has focused on using resampling techniques, while VerdictDB explores subsampling. They propose using variational subsampling, where each subsample does not necessarily have the same sample size as in traditional subsampling and show that the same theoretical guarantees can still be maintained. This allows them to efficiently create sample tables by independently generating a sample id for each tuple, denoting which subsample it belongs to. In order to account for inter-tuple correlations during sampling joins, VerdictDB first joins the two subsample tables of the join tables and then reindexes the sample ids of the join results by using the indexes of the parent tables.</p>
+
+<h4 id="dataethicspanel">Data Ethics Panel</h4>
+
+<p>There was a special session on ethics in data science, which was quite interesting. There was a good discussion on public transparency and explainability of results. For example, what constitutes a good explanation? Does it have to be comprehensive? The cognitive load on the user needs to be considered as well. What if only some reasons are provided for the decision of an algorithm? This is true for Facebook's "why am I seeing this" feature. Privacy is a concern in these cases since sharing wrong attributes can allow malicious users to extract information. </p>
+
+<p>Another key point was accounting for bias in the data. There was a heated debate on why we should counteract the bias, if the data is correct. This becomes two fold for human-in-the-loop systems, since the user's bias along with the bias in the data needs to be counteracted.</p>
+
+<h4 id="takeaways">Takeaways</h4>
+
+<p>Overall, throughout the conference there was a resounding theme on solving real world problems and collaborating with domain scientists, which was encouraging. Some interesting open problems included coming up with a formal model for visualizations, consolidating multiple tools required during data analysis into one system and finding ways to eliminate visualizations and go directly to insights. This last point falls very much along the theme of amplifying domain expertise. The goal is to allow experts to effectively interact with the data, so that they can get results quickly. What does it mean to 1) effectively interact with data? 2) to reduce effort? 3) to make a system explainable? 4) to amplify human input? Stay tuned!</p>
+</div>
+
+
+<hr>
+
+
+
+
+
+
+
+<h2 id="ieeeichi2018">IEEE ICHI 2018</h2>
+
+<p>This year was the 6th meeting of IEEE ICHI and there were 200 registered participants. Most of the talks focused on applying machine learning to a given problem such as identifying patient cohorts, building intent models and extracting knowledge from social media. Random forest seems to be a common technique. The doctoral consortium and key note presentations were the most interesting.</p>
+
+<h4 id="doctoralconsortium">Doctoral Consortium</h4>
+
+<ul>
+<li>Interactive Machine Learning - Gaurav Trivedi, University of Pittsburgh <br />
+This is was an interesting talk where the author proposed human-in-the-loop system that aims to reduce the burden on physicians when they summarize patient data for discharge and hand-off reports. The system shows the user snippets that should be included in the summary, and allows them to provide feedback on what should be included. The system then retrains and gets feedback iteratively.</li>
+
+<li>Architectures and Patterns for Leveraging High-Frequency, Low-Fidelity Data in the Healthcare Domain - Peng Zhang, Vanderbilt University <br />
+This work explored methods for augmenting EHR data with social media (which has high frequency, low fidelity). It uses a learned filtering architecture to find representative subsets and distributed ledger technology for sharing data while preserving privacy. </li>
+
+<li>Predicting end-of-life - Vincent Major, New York University <br />
+This talk described the use of machine learning to estimate when medical care is no longer useful. The author emphasized that intervention should be triggered immediately, similar to stroke triggers, which I don't quite agree with.</li>
+
+<li>Camera-Based Peripheral Edema Measurement Using Machine Learning - Jundo Chen, Columbia University <br />
+Edema is measured using a pit-test where the skin is depressed and then the manner in which it bounces back is observed. Nurses use their domain knowledge to measure this. Since patients are unable to self-report, the authors build a framework that allows patients to take a picture and use image recognition to diagnose edema. They were able to get 98% accuracy using synthetic data.</li>
+
+<li>A Comparison Between Two Approaches to Identify Opioid Use Problems: ICD-9 vs. Text-Mining Approach - Abdullah Alzeer, IUPUI <br />
+As the title suggests, this talk described using ICD-9 codes vs. text mining clinical notes to identify opioid use. From the final cohort, 45 were identified using 45 and 127 were identified using text mining, with only 8 overlapping cases.</li>
+
+<li>Mental Health Analysis Via Social Media - Amir Hossein Yazdavar, Wright State University <br />
+This talk described analyzing images and profile pictures on twitter for signs of depression.</li>
+</ul>
+
+<h4 id="remapadmankeynote">Rema Padman Keynote</h4>
+
+<p>The second day began with a wonderful keynote by Rema Padman (she mentioned she knew Tim Huerta really well during our conversation later). She motivated her talk with the <em>consumability challenge</em>: in an information rich society, there is a scarcity of what information - attention. The talk was split into three parts:</p>
+
+<ul>
+<li><p>The first part described data intensive decision science: This part of the talk described a youtube study with the goal of identifying how medical content in a video impacts user engagement. This can then be used to recommend videos to users and inform the making of medical "how-to" videos. The video metadata used includes title, time, views, image and transcript when available. The basic approach was medical knowledge assessment, user engagement assessment and then using a propensity score for causal assessment. Expert feedback on 600 videos was required for assessing health information. They found that the BLSTM is superior to UMLS lexicon. Their main finding is that too many medical terms reduces user engagement and there is a need to keep videos simple. However, not surprisingly users like videos with high medical information. This project can be seen as an indication of the rise of citizen science.</p></li>
+
+<li><p>The second part focused on data intensive social science: This segment described the use of a game as a <em>digital vaccine</em> for pediatric obesity management. The goal of the study is to match telemetry data from the game to real life choices. Pilot studies show that exposure to 20 minutes of the game improved eating habits, possibly due to recency effects. The app, called Fooya, allows the user to define their character and then uses immersive VR to engage the character in a food fight where consuming healthy foods allows them to run fast and fight robots while unhealthy food causes them to lose. Machine learning is used for real time learning and feedback based on user actions. The navigation patterns from telemetry data streams can be used to build hidden markov models to study learning and predict the child's next move. This can be used to gain a better understanding of how events of the game affect food choices. The project needs a larger study and is going to replace diabetic diet education in University of Pittsburgh. </p></li>
+
+<li><p>The third part focused on using design science and cognitive science to bridge gap between usability. This was demonstrated through a study on optimizing order sets. Order sets are lists used by physicians to order tests and medications. They contain a default set of items that are checked and unchecked. There is a physical and cognitive cost for these actions. Another option is to order a la carte, where the doctor has to scroll through the whole list and there are no defaults. The goal of this study is to reduce physical and cognitive workload when placing an order. The research questions include: Are defaults based on best order practices?
+Can we learn order sets from actual usage data? The proposed solution frames the problem as an optimization function which is sum of cognitive cost of a la carte vs. order set with changing default items, subject to certain constraints.</p></li>
+</ul>
+
+<h4 id="georgehripcsakkeynote">George Hripcsak Keynote</h4>
+
+<p>George Hripcsak's keynote covered two themes: prediction and research at scale. With respect to the first, he talked about predicting 30 readmission.  Logistic regression and natural language processing was used to find actionable items to prevent it. While EHR data has information on demographic, visit and lab results, it does not capture social information. An UI was developed to show predictions, but it had little effect on care. They further find that logistic regression has comparable performance to deep learning. The key challenges with these models include incorporating them into the workflow, actionable insights and their robustness (do they have the same results at a different institute).</p>
+
+<p>The second part focused on doing research at scale using OHDSI's common data model. There is sparse literature on side-effects of drugs. Using the common data model, the same query could be run across the world and results shared, without sharing data. The data model takes, on average, two months to deploy, but after that it is three weeks from hypothesis to results. Using this global model, a study on treatment pathways for diabetes was studied. It was found that Metformin(an insulin alternative) is rarely used in Japan because there is less insulin resistance there.</p>
+
+<h4 id="paultangkeynote">Paul Tang Keynote</h4>
+
+<p>The final keynote revolved around harnessing complementary intelligence.  The has been no reduction in time spent on information foraging in moving from paper to digital. A recent NY Times article noted that one-third of time on EHR is spent looking for insights, which leads to burnout. Humans need to teach computers how to help humans. An ethnographic study assessing physician information needs found the following:</p>
+
+<ul>
+<li>81% of structured information is missing because they were copied from paper charts</li>
+
+<li>Physicians need to look through notes to find diagnostic test results and medication info</li>
+
+<li>Medical students go through charts to highlight important information and record it in a longitudinal manner </li>
+
+<li>Examples of insights that physicians are looking for include: did the patient have any adverse drug reactions? how was he treated last time? what were the results of that treatment? have his social determinants changed?</li>
+</ul>
+
+<p>Other things that Paul touched on was heterogeneous treatment affect: the mean does not reflect the population. Similarly, in evidence-based medicine, findings based on a particular cohort might not work on everyone else. Hence, data and cohort-evidence need to complement each other, leading to precision medicine.</p>
+
+<h4 id="healthorganizationspanel">Health Organizations Panel</h4>
+
+<ul>
+<li><em>NYU</em> - First ask what the actionable items are before implementing a model</li>
+
+<li><em>Albert Einstein</em> - Their workflow consists of performing ETL tasks to map all data into a graph database. In this manner, information is not lost between source data, and any additional transformations are done right before making the model. Multiple models can give confounding results, an integrating them is an open challenge.</li>
+
+<li><em>New York Presbytarian</em> - In this talk, New York Presbytarian's efforts at reducing catheter-associated urinary tract information (CAUTI) are discussed. They find that passive clinical decision support (CDS) did not work and more interruptive one that was integrated into the nurses' protocol fared better with sustained improvement. There was also a brief discussion on how 1 in 1000 EHR orders are wrong and simple things like adding a photo can go a long way in helping (easy to see that you are treating the wrong person when they dont match the picture). </li>
+</ul>
+
+<h4 id="funthings">Fun things</h4>
+
+<ul>
+<li>Pecked by chicken on initial encounter and burn due to water skis on fire are real ICD codes</li>
+
+<li>Dont buy basic economy tickets and dont check in poster!</li>
+
+<li>Where is the wisdom we have lost in knowledge? Where is the knowledge we have lost in information? - T.S. Eliot, The Rock</li>
+
+<li>There has been a decrease in gum sales because we look down during checkout and use amazon</li>
+</ul>
+
+<h4 id="ichitakeaways">Takeaways</h4>
+
+<ul>
+<li>I had the opportunity of presenting at the doctoral consortium and received feedback from Edward (Ted) Shortliffe. He really liked the proposal to guide users to insights, mentioning that it is a very difficult task. He also mentioned that structuring data is a well-studied problem already and requires extensive literature review. His main advice was that any methods developed should be applicable to multiple cases/datasets and should focus on "advancing the science".      </li>
+
+<li>Visiting professor from SUNY who studies self reporting tremors liked <em>Transformer</em>.</li>
+</ul>
+
+
+<hr>
+<div id='interaction'>
+<h2>An Annotated Bibliography of Human Interaction Costs</h2>
+User studies can often be a time consuming and painful excercise. Luckily, sometimes these can be simulated! There is a wealth of work in the HCI community that estimates the time it takes to perform different tasks on devices. Most of these are based on the <a href="https://en.wikipedia.org/wiki/GOMS">GOMS family of models, 1983</a> and <a href="https://en.wikipedia.org/wiki/Fitts%27s_law">Fitt's Law, 1954</a>. The simplest GOMS model is the keystroke-level model (KLM), which estimates the task time as a composite of six operators, shown in the figure below, taken from this <a href="https://www.researchgate.net/profile/Stuart_Card/publication/220426122_The_Keystroke-Level_Model_for_User_Performance_Time_with_Interactive_Systems/links/09e4150e317b6ce554000000/The-Keystroke-Level-Model-for-User-Performance-Time-with-Interactive-Systems.pdf">paper</a> if you are unfamiliar with the original model.
+<br/>
+<img src="goms.png" alt="alt text" /> <br/>
+The original model was done on a type-writer and overtime it has been adapted for newer devices, from desktops to smartwatches. This article summarizes the weights listed for different devices from recent papers. I would recommend reading atleast one GOMS paper to familiarize yourself with the operators and terminology and then you can use the weights and operator sequence that is most appropriate for your use case. Obviously, there are limitations on doing a simulation and it is never as good as actual user studies, so judge appropriately. These models are only useful for estimating task completion times/user effort. If you need more complex metrics such as error rates, insight derivation, etc., you are out of luck and a user study is the only way!
+<h4 id="keystrokelevelmodelforadvancedmobilephoneinteractionpaulholleisfriederikeottoheinrichhumannalbrechtschmidt2007httpsdlacmorgcitationcfmid1240851">
+<a href="https://dl.acm.org/citation.cfm?id=1240851">Keystroke-Level Model for Advanced Mobile Phone Interaction</a> - Paul Holleis, Friederike Otto, Heinrich Hußmann, Albrecht Schmidt, 2007</h4>
+
+<p>This work updated the GOMS keystroke level model for mobile phone interactions. They considered new operators such as attention shift, distraction, action (complex action that cannot be modeled as sum of other operators), gesture (phone rotation), finger movement, initial act(finding phone). Adapted operators include keystroke, pointing and home. Unchanged operators include mental act and response time. The parameters were estimated through seven studies with each study having 9-19 participants. Users under went training to reach expert user level. The following numbers were observed for each parameter in seconds:</p>
+
+<ul>
+<li>initial act 
+
+
+<ul>
+<li>no assumptions - 4.61s</li>
+
+<li>expected interaction - 1.18s</li></ul>
+</li>
+
+<li>homing - .95s</li>
+
+<li>pointing (touching on a movie poster) - 1s</li>
+
+<li>macro attention shift (between phone and poster) - .36s</li>
+
+<li>micro attention shift (between different areas of the phone - eye tracker) -  .14s</li>
+
+<li>gesture - .8s</li>
+
+<li>keystroke - .33s</li>
+
+<li>finger movement - .24s</li>
+
+<li>slight distractions - add 6%, strong distractions add 21%</li>
+</ul>
+
+<h4 id="modelingwordselectioninpredictivetextentryhamedhsadandfranckpoirier2009httpslinkspringercomproxylibohiostateeducontentpdf1010072f9783642025778pdf"><a href="https://link-springer-com.proxy.lib.ohio-state.edu/content/pdf/10.1007%2F978-3-642-02577-8.pdf">Modeling Word Selection in Predictive Text Entry</a> - Hamed H. Sad and Franck Poirier, 2009</h4>
+
+<p>Sad and Poirier model word selection from a list using a keystroke level method. The time to word index(n) on list relation can be modeled as:</p>
+
+<p>T = 142.287n+2857 ms for sorted lists on desktop with scrolling</p>
+
+<p>T = 186.19n+3266 ms for unordered list on desktop without scrolling</p>
+
+<p>T = 81.178n+2336 ms for unordered list on desktop with scrolling</p>
+
+<p>T = 202.12n+1462.6 ms for unordered list on handheld stylus device with scrolling</p>
+
+<p>T = 83.681n+1026.1 ms for unordered list on handheld stylus device without scrolling</p>
+
+<h4 id="enhancingklmkeystrokelevelmodeltofittouchscreenmobiledeviceskarimelbatranmarkddunlop2014httpsdlacmorgcitationcfmid2628385"><a href="https://dl.acm.org/citation.cfm?id=2628385">Enhancing KLM (Keystroke-Level Model) to Fit Touch Screen Mobile Devices</a> - Karim El Batran, Mark D. Dunlop, 2014</h4>
+
+<p>This paper updates the KLM operators for touch screen mobile phones:</p>
+
+<p>Short swipes - .07s</p>
+
+<p>Zooming - .02s</p>
+
+<p>Home position to key - .08s</p>
+
+<h4 id="fingerstroketimeestimatesfortouchscreenbasedmobilegaminginteractionahreumleekiburmsonghokyoungblakeryujieunkimgyuhyunkwon2015httpsacelscdncoms01679457153003731s20s0167945715300373mainpdf_tid77743945d7484bd2a26adf0a75679307acdnat1532917500_3cdad519eb509842595ea31b7d303d1b"><a href="https://ac.els-cdn.com/S0167945715300373/1-s2.0-S0167945715300373-main.pdf?_tid=77743945-d748-4bd2-a26a-df0a75679307&amp;acdnat=1532917500_3cdad519eb509842595ea31b7d303d1b">Fingerstroke time estimates for touchscreen-based mobile gaming interaction</a> - Ahreum Lee, Kiburm Song, Hokyoung Blake Ryu,  Jieun Kim, Gyuhyun Kwon, 2015</h4>
+
+<p>This paper proposes a Finger Level Model (FLM) which modifies the keystroke level model for touch. The actions considered include tapping, pointing, dragging and flicking. The experiment was conducted with 60 students (30 men), aged 20-33yrs. Participants were asked to hold phone in landscape position to conform with most gaming interfaces. The phone was held in the non-dominant hand while interactions were done with the thumb of the dominant hand. For distance to target = A and target size = W:</p>
+
+<p>The execution time for tapping is given by:</p>
+
+<p>T<sub>t</sub> = -.1294 + .3376 x log<sub>2</sub>(A/W+1). Average (for A = 10mm) = .31s (.2s in KLM). </p>
+
+<p>For the pointing task time, time is given by:</p>
+
+<p>T<sub>P</sub> = .1035 + .1257 x log<sub>2</sub>(A/W+1). Average(for A = 10mm) = .43s (1.1s in KLM)</p>
+
+<p>For the dragging task:</p>
+
+<p>T<sub>D</sub> = -.0327 + .0799 x log<sub>2</sub>(A/W+1). Average(for A = 10mm) = .17s</p>
+
+<p>Flicking = .11s</p>
+
+<p>They validated their models through experimental studies, with a root mean squared error of 16%.</p>
+
+<h4 id="blindflmanenhancedkeystrokelevelmodelforvisuallyimpairedsmartphoneinteractionshiroqalmegrenwejdanaltamimihendsalkhalifa2017httpslinkspringercomchapter1010079783319677446_10"><a href="https://link.springer.com/chapter/10.1007/978-3-319-67744-6_10">Blind FLM: An Enhanced Keystroke-Level Model for Visually Impaired Smartphone Interaction</a> - Shiroq Al-Megren, Wejdan Altamimi, Hend S. Al-Khalifa, 2017</h4>
+
+<p>This study updates the keystroke level model for the visually impaired. To understand interactions, 21 blind participants were surveyed, which was then validated by observing 3 participants. The interaction operators included tap, flick, double tap and drag. The times for these operators were taken from Bertran's study (above): tap = .31s, flick = .11s, double tap = 2 x .31 = .62s, drag = .17s. The validation study with 21 participants had root mean squared error of 2.36%. </p>
+
+<h4 id="apredictivefingerstrokelevelmodelforsmartwatchinteractionshiroqalmegren2018httpwwwmdpicom241440882338"><a href="http://www.mdpi.com/2414-4088/2/3/38">A Predictive Fingerstroke-Level Model for Smartwatch Interaction</a> - Shiroq Al-Megren, 2018</h4>
+
+<p>This paper defines weights for the KLM operators for a smartwatch. The authors first conducted an observational study with 22 participants to figure out operators. Adapted operators were tap, swipe, drag, double tap, press, double press, home. New operators include tap and hold, press and hold, turn, initial action (wake phone from sleep by raising it), gesture (cover watch face to silence it). The mental operator is retained and used before tap, press, drag, swipe, turn and gesture. A second study with 30 participants was carried out to inform unit times for these operators, which are as follows: <br/>
+<img src="smartwatch_params.png" alt="alt text" /> <br/>
+A third study was conducted with 40 participants to validate these parameters and a root mean squared error of 12% was found which is within the threshold of 21% error rate usually reported for KLM parameters.</p>
+
+<h4 id="assessingthetargetsizeanddragdistanceinmobileapplicationsforuserswithautismangelesquezadareyesjurezramrezsamanthajimnezalanramreznoriegasergioinzunzarobertomunoz2018httpslinkspringercomchapter1010079783319777122_117"><a href="https://link.springer.com/chapter/10.1007/978-3-319-77712-2_117">Assessing the Target’ Size and Drag Distance in Mobile Applications for Users with Autism</a> - Angeles Quezada, Reyes Juárez-Ramírez,Samantha Jiménez, Alan Ramírez-Noriega, Sergio Inzunza, Roberto Munoz, 2018</h4>
+
+<p>20 users with autism spectrum disorder were recruited (9 with level 1, 11 with level 2). An Android application to test drag and drop was created. Image sizes of 31, 63, and 86 pixels and drag distances of 95, 324 and 553 pixels were tested. The image of an orange star was used. Each participant was tested on the 9 combinations of image and distance. They find the optimal image size to be 55 pixels.</p>
+
+<h4 id="optimizinguserinterfacesforhumanperformanceanttioulasvirta2017httpslinkspringercomchapter1010079783319720388_1"><a href="https://link.springer.com/chapter/10.1007/978-3-319-72038-8_1">Optimizing User Interfaces for Human Performance</a> - Antti Oulasvirta, 2017</h4>
+
+<p>In his talk on optimizing user interfaces, Oulasvirta discusses four key problems: The first is the definition of the problem. Algorithmically description of a designers subjectivity can be computationally expensive. Second, he argues that the objective function being optimized must include behavioral, social and biological aspects that improve quality of the user experience, as opposed to simple heuristics such as task completion time. The third problem is trade-off between algorithmic methods: exact methods such as integer programming give optimal answers but require simplication of the objective function, while heuristic methods require parameter tuning. Fourth, is definition of task instance i.e. capturing the designers intention.</p>
+
+<h4 id="menuoptimizerinteractiveoptimizationofmenusystemsgillesbaillyanttioulasvirtatimoktzingsabrinahoppe2013httpshalsorbonneuniversitefrhal01528320document"><a href="https://hal.sorbonne-universite.fr/hal-01528320/document">MenuOptimizer: Interactive Optimization of Menu Systems</a> - Gilles Bailly, Antti Oulasvirta, Timo Kötzing, Sabrina Hoppe, 2013</h4>
+
+<p>Bailly et al. propose a system that allows the designer to iteratively refine their design, while using an ant colony optimizer that suggests layouts. Their work is motivated by the fact that it is impossible for the designer to explore the entire search space, designers are unable to articulate the goodness of a design (<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.145.8331&amp;rep=rep1&amp;type=pdf">Poltrock and Grudin,'94</a>) and they tend to favor aesthetics over effiency (<a href="https://pennstate.pure.elsevier.com/en/publications/aide-a-step-toward-metric-based-interface-development-tools">Sears, '95</a>). The Search-Decision-Pointing (SDP) model is used with few adaptations: deep menus are penalized with a steering cost, semantic grouping of items are achieved by scores assigned from a database item co-occurrence containing 111,859 command pairs collected from a menu logger tool from 68 applications in MacOS. Commands in the database are scored on compounded score of if they belong to the same hierarchy, menu or subgroup. If commands are not in the database, lexical similarity is used. The SDP problem thus also has a consistency component that needs to be optimized. The problem is then framed as a quadratic assignment problem. The optimizer iteratively provides solutions, initially computing features that are frrequent. This is followed by a greedy hill climbing optimizer that responds within 10s and the ant colony optimizer that responds within 1000s.</p>
+
+<h4 id="declarativeinterfacemodelsforuserinterfaceconstructiontoolsthemastermindapproachpszekelypsukaviriyapcastellsjmuthukumarasamyesalcher1995httpciteseerxistpsueduviewdocdownloaddoi10113674827reprep1typepdf"><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.367.4827&amp;rep=rep1&amp;type=pdf">Declarative interface models for user interface construction tools: the MASTERMIND approach</a> - P. Szekely, P. Sukaviriya, P. Castells, J. Muthukumarasamy, E. Salcher, 1995</h4>
+
+<p>Szekely et al. propose Mastermind, which takes a model-based specification of a UI such as functionalities of the system, user preferences, style requirements, etc. and automatically generates the UI based on these. The system consists of an application model, which contains interface objects, expressions, such as assignments which tie objects together, a task model that describes what a user should be able to accomplish and a presentation model that describes visual appearance of an interface. </p>
+
+<h4 id="userinterfacedesignrecommendationsthroughmulticriteriadecisionanalysissubbiahvairamuthuamalanathananthonirajsmargretanounciauffekockwiil2018httpslinkspringercomchapter1010079789811066801_14"><a href="https://link.springer.com/chapter/10.1007/978-981-10-6680-1_14">User Interface Design Recommendations Through Multi-Criteria Decision Analysis</a> - Subbiah Vairamuthu, Amalanathan Anthoniraj, S. Margret Anouncia, Uffe Kock Wiil, 2018</h4>
+
+<p>Vairamuthu et al. used association rule mining to collect common UI elements for different interaction paradigms such as menu based interaction, form based interaction, etc. Then interaction intensity, user experience and user age is taken as input and used to generate an ideal UI using the TOPSIS model. The goal is to generate an interface that is suitable for users irrespective of the mentioned input parameters. These recommendations are saved in a case based repository to be used later.</p>
+
+<h4 id="generatinguserinterfacefromtaskuseranddomainmodelsvitranjeanvanderdoncktmanuelkolp2009httpsieeexploreieeeorgabstractdocument5291024"><a href="https://ieeexplore.ieee.org/abstract/document/5291024/">Generating User Interface from Task, User and Domain Models</a> - Vi Tran, Jean Vanderdonckt, Manuel Kolp, 2009</h4>
+
+<p>The authors use rule based methods (also see <a href="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=F1E7D94A272DDB3719DB7374CC2EEE88?doi=10.1.1.41.757&amp;rep=rep1&amp;type=pdf">Bodart and Vanderdonckt, 1994</a>) to generate user interface from a task model, user model and domain model. The task model defines application functionalities and goals, user model defines user expertise while domain model has information from the database. Each task is linked to the database attribute it modifies and the widgets are selected according to the datatype of the attribute.</p>
+
+<h4 id="anautomatedlayoutapproachformodeldrivenwimpuigenerationdavidraneburgerromanpoppjeanvanderdonckt2012httpsdlacmorgcitationcfmdoid23054842305501"><a href="https://dl.acm.org/citation.cfm?doid=2305484.2305501">An Automated Layout Approach for Model-Driven WIMP-UI Generation</a> - David Raneburger, Roman Popp, Jean Vanderdonckt, 2012</h4>
+
+<p>Raneburger et al. propose an automatic layout method that places largest items first in a container and then proceeds in a right-bottom approach. They use layout hints provided by the user to identify item ordering. This saves cost over manual approach since the hints can be reused through transformation rules between containers for the same component. A depth first search is used to create the UI, so that the child elements are layed out first followed by their containers. Hence, only widget sizes for child elements have to specified. The best-fit ratio is used to estimate container size.</p>
+
+
+<h4 id="acomparisonofscreensizeandinteractiontechniqueexaminingexecutiontimesonthesmartphonetabletandtraditionaldesktopcomputerlaurahaakmarcial2010httpmarcialwebuncedufiles201105marcial_lit_review_for_cmtepdf"><a href="http://marcial.web.unc.edu/files/2011/05/Marcial_lit_review_for_cmte.pdf">A comparison of screen size and interaction technique: Examining execution times on the smartphone, tablet and traditional desktop computer</a> - Laura Haak Marcial, 2010</h4>
+
+<p>This literature survey summarizes comparisons in usability between different devices. Large displays do not reduce accuracy, and in some cases improves, although it increases task completion time. Smaller displays can maintain the same performance as larger ones if the zoom/pan performance is adequate. In terms of different interaction techniques, principles of direct interaction as listed by Schneiderman, 1983, include:</p>
+
+<ul>
+<li>The object of interest should always be visible</li>
+
+<li>operations should involve physical actions as opposed to complex commands</li>
+
+<li>The actions should be rapid, incremental and reversible</li>
+
+<li>The user should have immediate feedback upon an action to know that the command was issued</li>
+
+<li>Commands should cover everything needed by a novice user</li>
+</ul>
+
+<p>Comparing mouse and touch, touch interaction had higher throughput but with increased errors for small targets.</p>
+</div>
+
+<hr>
+<div id='dsia'><h2>DSIA 2015 and 2017</h2>
+<p>This article contains brief summaries of some papers from the first two <a href="https://www.interactive-analysis.org/">Data Systems for Interactive Analysis(DSIA)</a> worskhops.</p>
+
+<h4 id="towardsvisualizationrecommendationsystemsmanasivartaksiluhuangtariquesiddiquisamuelmaddenadityaparameswaranhttpspeoplecsailmitedumvartakpapersvisrecvisionpdf"><a href="https://people.csail.mit.edu/mvartak/papers/visrec-vision.pdf">Towards Visualization Recommendation Systems</a> - Manasi Vartak, Silu Huang, Tarique Siddiqui, Samuel Madden, Aditya Parameswaran</h4>
+
+<p>This paper outlines the requirements for building a visualization recommendation system. Some of the limitations of VisRec systems then, along with new systems that address them include:</p>
+
+<ul>
+<li>There is no language for the user to specify trends of interest - Zenvisage</li>
+
+<li>Systems do not provide context or big picture for the given visualization i.e. how do we know if something is an outlier in the current visualization? The user needs to look at multiple visualizations of the same dimension - SeeDB</li>
+
+<li>Systems do not use prior user interactions for recommendations - Voyager</li>
+
+<li>Some parts of the data are never seen by the user, due to the size.</li>
+</ul>
+
+<p>Factors to consider, when building a VisRec system include:</p>
+
+<ul>
+<li>Data characteristics - The system should be able to provide overview, trends, correlations, outliers</li>
+
+<li>Intended user task - VisRec systems should detect user bias and provide measures to counter them</li>
+
+<li>Systems should be augmented with domain knowledge, so as not to highlight superfluous anomalies such as high female population in OB/GYN</li>
+
+<li>Systems should ensure that an encoding is picked that is easy for the user to understand</li>
+
+<li>Varying visual literacy of users must be accounted for, when recommending visualizations.</li>
+</ul>
+
+<p>Metrics for visualization quality:</p>
+
+<ul>
+<li>Relevance - is the visualization relevant to the given task?</li>
+
+<li>Surprise - does the visualization contain unexpected results/anomalies? This is only based on data statistics </li>
+
+<li>Non-obviousness - does the visualization show something truly anomalous? This is after incorporating domain knowledge on top of statistics.</li>
+</ul>
+
+<p>Futher, the entire visualization set should be diverse as well as cover a large spectrum of the dataset. The amount covered can be shown to the user as a percentage. The paper additionally discusses performance challenges and approaches for addressing them through precomputation, parallelism, multi query optimization, and approximate computation.</p>
+
+<h4 id="towardsperceptionawareinteractivedatavisualizationsystemseugenewuarnabnandihttpswwwinteractiveanalysisorgpapers2015wupdf"><a href="https://www.interactive-analysis.org/papers/2015/wu.pdf">Towards Perception-aware Interactive Data Visualization Systems</a> - Eugene Wu, Arnab Nandi</h4>
+
+<p>This paper discusses possibilities of improving performance of interactive systems by taking human perceptual limits into consideration. They propose InterVis, a client-server architecture where a series of queries is seen as a session, differing only in the where clause. Visualizations are modeled by queries having parameters for rendering which represent chart type, encoding, etc. and rendering which represent the user's perceptual capability. The perceptual functions can be used for:</p>
+
+<ul>
+<li><strong>Perceptual approximation</strong> such that the approximate results are with percievable limits of the user (through appropriate sample size</li>
+
+<li><strong>Perceptual filtering</strong> so that result change between frames which are not perceivable are not calculated.</li>
+</ul>
+
+<h4 id="dynamicclientserveroptimizationforscalableinteractivevisualizationonthewebdominikmoritzjeffreyheerandbillhowehttpswwwinteractiveanalysisorgpapers2015moritzpdf"><a href="https://www.interactive-analysis.org/papers/2015/moritz.pdf">Dynamic Client-Server Optimization for Scalable Interactive Visualization on the Web</a> - Dominik Moritz, Jeffrey Heer, and Bill Howe</h4>
+
+<p>The authors propose a system that automatically partitions work between the client and server through a cost model. This is enabled by a declarative visualization language. The cost is calculated as the sum of latencies of initializing the visualization (loading and rendering it) and user interactions during an exploration session. A markov chain model is used for predicting state transitions and hence the interactions for making those transitions.</p>
+
+<h4 id="progressivisatoolkitforsteerableprogressiveanalyticsandvisualizationjeandanielfeketehttpswwwinteractiveanalysisorgpapers2015feketepdf"><a href="https://www.interactive-analysis.org/papers/2015/fekete.pdf">ProgressiVis: a Toolkit for Steerable Progressive Analytics and Visualization</a> - Jean-Daniel Fekete</h4>
+
+<p>The authors introduce a new programming paradigm that calculates results progressively, showing intermediate results. The program is split into modules and each modules is given a limited quantum of time to run before handing over key to next module. The quantum of time for each module needs to be predicted based on prior runs, since it is unclear how long a statement will take to execute, before running it. ProgressiVis is available as a python package. An interesting point is that the accuracy of the progressive run depends on the sample chosen, however this is hard ("Finding an algorithm to select useful samples of a large datasets that is progressively loaded is still an open research question").</p>
+
+<h4 id="highdimensionalscientificdataexplorationviacinemajonathanwoodringjamespahrensjohnpatchettcamerontauxeanddavidhrogershttpswwwinteractiveanalysisorgpapers2017woodringcinema2017pdf"><a href="https://www.interactive-analysis.org/papers/2017/Woodring-Cinema-2017.pdf">High-Dimensional Scientific Data Exploration via Cinema</a> - Jonathan Woodring, James P. Ahrens, John Patchett, Cameron Tauxe, and David H. Rogers</h4>
+
+<p>This is a system design paper that describes the different stages for designing a datastore for results of image processing algorithms. Cinema is a system that stores image filename along with different meta-data such as parameter values for camera positions, isosurface values, colormap, as well as parameters for simulations such as time stamp and output values. Initial versions of Cinema stored these values in the filenames, but the latest version uses a CSV. Navigating different dimensions of the dataset with sliders was found to be ineffective, instead a parallel coordinate view is used. Range queries are specified by brushing and linking along each dimension. Cinema also supports SQL queries. </p>
+
+<h4 id="couplingvisualizationsimulationanddeeplearningforensemblesteeringofcomplexenergymodelsbrianbushnicholasbrunhartlupobrucebugbeevenkatkrishnankristinpotterandkennygruchallahttpswwwinteractiveanalysisorgpapers2017bushensemblesteering2017pdf"><a href="https://www.interactive-analysis.org/papers/2017/Bush-EnsembleSteering-2017.pdf">Coupling Visualization, Simulation, and Deep Learning for Ensemble Steering of Complex Energy Models</a> - Brian Bush, Nicholas Brunhart-Lupo, Bruce Bugbee, Venkat Krishnan, Kristin Potter, and Kenny Gruchalla</h4>
+
+<p>This paper describes a visual interface for studying and interacting with enery simulations. Users are able to select simulations of interest which are highlighted and then projected on x,y planes. To support interactive latencies, reduced forms of the simulations are being developed. Preliminary results show that these results are comparable to real simulations.</p>
+
+<h4 id="aclientbasedvisualanalyticsframeworkforlargespatiotemporaldataunderarchitecturalconstraintsguizhenwangabishmalikchittayongsurakitbanharnjoseflorenciodequeiroznetoshehzadafzalsiqiaochendavidwiszowatyanddavidsebertfellowhttpswwwinteractiveanalysisorgpapers2017wangspatiotemporal2017pdf"><a href="https://www.interactive-analysis.org/papers/2017/Wang-Spatiotemporal-2017.pdf">A Client-based Visual Analytics Framework for Large Spatiotemporal Data under Architectural Constraints</a> - Guizhen Wang, Abish Malik, Chittayong Surakitbanharn, Jose Florencio de Queiroz Neto, Shehzad Afzal, Siqiao Chen, David Wiszowaty and David S. Ebert, Fellow</h4>
+
+<p>The framework proposed allows for interactive exploration of data for client-server architectures with limited capacity. The server is only able to respond to SQL queries to security reasons, while the client has low-memory. Under these constraints the authors propose a system the incrementally visualizes spatio-temporal data until the user is satisfied. The application resides on the client and is stored in a two tiered index, the first level being temporal and the second, spatial. The index is built on a sample of the data, and since it is impossible to preprocess the entire dataset (due to the constraints), the index is incrementally refined as more data is sampled from the server. The data density and node organization is predicted based on the historical sample.</p>
+
+<h4 id="xplorerasystemforvisualanalysisofsensorbasedmotoractivitypredictionsmarcocavallocagataydemiralphttpswwwinteractiveanalysisorgpapers2017cavalloxplorer2017pdf"><a href="https://www.interactive-analysis.org/papers/2017/Cavallo-Xplorer-2017.pdf">Xplorer: A System for Visual Analysis of Sensor-based Motor Activity Predictions</a> - Marco Cavallo, Cagatay Demiralp</h4>
+
+<p>Xplorer is a system for visualizing predicted labels of videos, their groundtruths and the video itself through different time spans. This allows data scientists more transparency on where errors are stemming from. Scientists could see that humans often labeled an action before it started, e.g., a movement is labeled was walking as soon as the intent to move is seen.</p>
+
+<h4 id="foresightrapiddataexplorationthroughguidepostscagataydemiralppeterjhaassrinivasanparthasarathytejaswinipedapatihttpsarxivorgpdf170910513pdf"><a href="https://arxiv.org/pdf/1709.10513.pdf">Foresight: Rapid Data Exploration Through Guideposts</a> - Cagatay Demiralp, Peter J. Haas, Srinivasan Parthasarathy, Tejaswini Pedapati</h4>
+
+<p>Foresight is a system that shows the users "guideposts" to enable better navigation and insight generation. Guideposts refer to visualization of statistical descriptors such as dispersion, skew, heavy-tailness, outliers, etc. The design for Foresight was done through a design study, while visual encodings are based on prior literature. Guideposts for a specific descriptor is ranked based on its ability to generate insight and this ranking can be changed by users. Ranked guideposts are shown in a carousel.</p>
+
+<h4 id="agametheoreticapproachtodatainteractionaprogressreportbenmccamisharashtermehchybehrouztourihttpdeliveryacmorg10114530800003077270a15mccamishpdfip140254217101id3077270accactive20servicekey1d8e1ca5b8d7d8dd2ed6b9658582656cb82e4d4702b0c3e38b352e4d4702b0c3e38b35__acm__1532069503_3d0c6642074e65215709653df1b48f64"><a href="http://delivery.acm.org/10.1145/3080000/3077270/a15-mccamish.pdf?ip=140.254.217.101&amp;id=3077270&amp;acc=ACTIVE%20SERVICE&amp;key=1D8E1CA5B8D7D8DD%2ED6B9658582656CB8%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&amp;__acm__=1532069503_3d0c6642074e65215709653df1b48f64">A Game-theoretic Approach to Data Interaction: A Progress Report</a> - Ben McCamish, Arash Termehchy, Behrouz Touri</h4>
+
+<p>Since many users who interact with the database are not able to express themselves using SQL, they use natural language. This paper models the interaction between a user and the database a signaling game, where both get a reward for the right response. They test two algorithms that model two aspects of user behaviour exploring, where they are discovering new queries, and exploitation, where they use their previous knowledge of queries to get what they want. They find that users tend to exploit rather than explore.</p>
+</div>
+</div>
+</div>

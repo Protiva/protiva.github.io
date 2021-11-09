@@ -1,0 +1,102 @@
+/* The sidebar menu */
+.main h2
+{
+  color: gray
+}
+
+h5
+{
+  color: #704270
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #E8E8E8;; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    color: black
+   /* padding: 10px 0px 0px 16px;*/
+}
+
+.sidenav h3{
+  padding: 0px 0px 0px 0px;
+  
+}
+.sidenav img{
+  margin-left:15px;
+}
+/* The navigation menu links */
+.sidenav a{
+   padding: 6px 0px 0px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #111;
+    display: block;
+}
+.sidenav{
+   color: white;
+    padding: 6px 8px 6px 16px;
+}
+#blogcontents a{
+   padding: 6px 5px 5px 16px;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    
+    color: #818181;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+body { 
+
+
+  background: #ECE3F0;
+}
+#about{
+  padding-top:80px;
+}
+table {
+  padding-top:50;
+}
+
+td, th {
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+   padding-top:50;
+}
+a:link, a:visited {
+  color: #A06AB4;
+  background-color: transparent;
+ }
+
+#about a:link, #about a:visited {
+  color: inherit;
+  background-color: transparent;
+ }
+ #news{
+  font-size: 15px;
+  background-color:#e6e8f6;
+}
+
+.card{
+  font-size: 15px;
+  background-color: #F6E6E8;
+}
