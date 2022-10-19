@@ -6,7 +6,11 @@
 
 h5
 {
-  color: #704270
+  color: #E4E5E8;
+}
+.card h5
+{
+  color: #988686;
 }
 
 .center {
@@ -67,7 +71,7 @@ h5
 body { 
 
 
-  background: #ECE3F0;
+  background: #D1D0D0;
 }
 #about{
   padding-top:80px;
@@ -83,7 +87,7 @@ td, th {
    padding-top:50;
 }
 a:link, a:visited {
-  color: #A06AB4;
+  color: #988686;
   background-color: transparent;
  }
 
@@ -93,10 +97,10 @@ a:link, a:visited {
  }
  #news{
   font-size: 15px;
-  background-color:#e6e8f6;
+  background-color:#E4E5E8;
 }
 
 .card{
   font-size: 15px;
-  background-color: #F6E6E8;
+  background-color: white;
 }

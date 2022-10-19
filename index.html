@@ -19,7 +19,7 @@
 </head>
 
 <body>
-	<nav class="navbar fixed-top navbar-light justify-content-center" style="background-color: #D3BBDD;">
+	<nav class="navbar fixed-top navbar-light justify-content-center" style="background-color: #5C4E4E;">
   
       <ul class="nav">
         <li class="nav-item">
@@ -41,14 +41,13 @@
 
 <div class = 'row' id='about'>
 	<div class="col-md-auto">
-		<img  border ="1" src="pic2.jpeg" height="170">
-
-			
+   
+			<img  border ="1" src="headshot_2022.jpg" height="170">
 	</div>
 	<div class="col">
 		<h2>Protiva Rahman <a href='mailto:protiva.r@gmail.com'><img  src="mail.png" height="30" ></a> <a href='https://scholar.google.com/citations?user=a7oFoT8AAAAJ&hl=en'><img  src="scholar.png" height="30" ></a>  <a href='https://twitter.com/protivarahman'><img src="Twitter-logo.png" height="25"></a>  <a href='https://www.linkedin.com/in/protiva-rahman-88a10aa0'><img src="linkedinlogo.png" height="25"></a></h2><!--[<a href='http://web.cse.ohio-state.edu/~rahman.92/blog.html'>Blog</a>]-->
 
-		<p>Protiva is a postdoctoral fellow advised by <a href='https://www.vumc.org/dbmi/person/daniel-fabbri-phd-famia'>Daniel Fabbri</a> at Vanderbilt University Medical Center. She is broadly interested in democratizing data science to empower domain experts. This involves building tools to bridge the gap between domain experts and data scientists and spans the disciplines of <i>data science, natural language processing, and human-computer interaction</i>. Her current research is focused on automating data curation from unstructured texts such as EHR notes and biomedical literature. She received her PhD in Computer Science from The Ohio State University in August, 2020, under the supervision of <a href='http://arnab.org/' target = '_blank'>Arnab Nandi</a> and <a href='https://medicine.osu.edu/find-faculty/non-clinical/biomedical-informatics/courtney-hebert' target = '_blank'>Courtney Hebert</a>. Her thesis presented a framework for <a href="#amplify"> amplifying</a> domain expertise.</p>
+		<p>I am a postdoctoral fellow advised by <a href='https://www.vumc.org/dbmi/person/daniel-fabbri-phd-famia'>Daniel Fabbri</a> at Vanderbilt University Medical Center. I am interested in building tools to democratize data science, with a focus on empowering domain experts in healthcare. My research spans the disciplines of <i>data science, natural language processing, and human-computer interaction</i>. I am currently working on automating data curation from unstructured texts such as EHR notes and biomedical literature using NLP. During my PhD, I presented a framework for <a href="#amplify"> amplifying</a> domain expertise and explored the use of knowledge bases to accelerate human-in-the-loop data cleaning. I received my PhD in Computer Science from The Ohio State University in August 2020, under the supervision of <a href='http://arnab.org/' target = '_blank'>Arnab Nandi</a> and <a href='https://medicine.osu.edu/find-faculty/non-clinical/biomedical-informatics/courtney-hebert' target = '_blank'>Courtney Hebert</a>.</p> 
 	</div>
 </div>
 </br>
@@ -56,9 +55,11 @@
 <div id='news' class="card">
   <div class="card-body">
 	<h5 style="margin:0; padding:0;" >News</h5>
-		<div style="overflow-y:scroll; height:100px; margin:0; padding:0;" >
+		<div style="overflow-y:scroll; height:150px; margin:0; padding:0;" >
 		<ul>
-			<li> Nov 2021: <a href='https://www.linkedin.com/in/megan-shuey-901545141/'>Megan</a> and <a href='https://www.linkedin.com/in/rachel-xiang/'>Rachel</a> are presenting our work on the novel <i>PRESCIANT method</i> at AHA[<a href="https://www.ahajournals.org/doi/pdf/10.1161/ATVBAHA.121.317071">preprint</a>]</li>
+      <li> October 2022: I am on the academic job market! Please reach out if you have openings in Biomedical Informatics or Computer Science. </li>
+      <li> June 2022: Submitted my first K99/R00 grant to NCI! </li>
+			<li> Nov 2021: <a href='https://www.linkedin.com/in/megan-shuey-901545141/'>Megan</a> and <a href='https://www.linkedin.com/in/rachel-xiang/'>Rachel</a> are presenting our work on the novel <i>PRESCIANT method</i> at AHA[<a href="https://www.ahajournals.org/doi/pdf/10.1161/ATVBAHA.121.317071">paper</a>]</li>
 			<li> Oct 2021: Excited to attend AMIA in person after two years and present our work on <i>Automating Data Curation from Unstructured Text</i>[<a href='PS01_Rahman.pdf'>pdf</a>]</li>
 			<li> July 2021: Our ASCO poster was highlighted in <a href='https://www.oncologynurseadvisor.com/home/headlines/conference-coverage/asco-2021/asco-2021-lung-cancer-in-depth/lung-cancer-nsclc-prediction-model-assess-risk-metastasis-treatment'>Oncology Nurse Advisor</a></li>
 			<li> June 2021: Presenting our work on <i>Predicting Brain Mets in NSCLC patients</i> at ASCO 2021</li>
@@ -81,17 +82,51 @@
 </br>
 
 <h2 id='pubs'>Selected Publications</h2>
+<div class="card" id="presciant">
+  <div class="card-body">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-auto">
+          <img  border ="1" src="presciant_interface.png" height="150" >
+        </div>
+        <div class="col">
+          <h5 style="margin:0; padding:0;" class="card-title">Semi-Automated Data Curation from Biomedical Literature</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Protiva Rahman, Rachel Xiang, Yihua Wang, Joshua Beckman, Quinn Wells, Iris Jaffe, Megan Shuey, Daniel Fabbri. <i>AMIA 2022.</i> [<a href='Semi_Automated_Data_Curation_Rahman.pdf'>pdf</a>]</h6>
+          <p> Aggregating data from preclinical studies to identify and validate novel pathways in humans using the PRESCIANT method [<a href="https://www.ahajournals.org/doi/pdf/10.1161/ATVBAHA.121.317071">paper</a>] requires data extraction from biomedical literature. In this work, we present a preliminary tool which uses NLP methods to automatically extract and populate a web form which can be reviewed by curators.Our NLP model has a 70% accuracy on categorical fields and our curation tool accelerates task completion time by 49% compared to manual curation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</br>
+<div class="card" id="colitis">
+  <div class="card-body">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-auto">
+          <img  border ="1" src="Figure_1.png" height="150" >
+        </div>
+        <div class="col">
+          <h5 style="margin:0; padding:0;" class="card-title">Automated Curation of Checkpoint Inhibitor Side-Effects from EHR</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Protiva Rahman, Cheng Ye, Kathleen Mittendorf, Michele LeNoue-Newton, Christine Micheel, Jan Wolber, Travis Osterman, Daniel Fabbri. <i>In submission.</i> [<a href='colitis_poster.pdf'>poster</a>]</h6>
+          <p> While checkpoint inhibitors (CPI) have improved cancer treatment, they cause side-effects such as CPI-induced colitis which reduce patient's quality of life. Predictive models for CPI-induced colitis can allow physician's to adapt their care. However, these models require data extracted from the EHR since CPI-induced colitis do not have clear diagnosis codes and keyword search returns over 200,000 notes with a 10% accuracy. In this work we present data pipelines which extract EHR notes related to CPI-induced colitis with 84% precision and reduced note review load by 75%.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</br>
 <div class="card" id="amplify">
   <div class="card-body">
   	<div class="container-fluid">
   		<div class="row">
   			<div class="col-md-auto">
-  				<img  border ="1" src="amplify_overview.png" height="100">
+  				<img  border ="1" src="amplify_overview.png" height="150" >
   			</div>
   			<div class="col">
   				<h5 style="margin:0; padding:0;" class="card-title">Amplifying Domain Expertise in Clinical Data Pipelines</h5>
   				<h6 class="card-subtitle mb-2 text-muted">Protiva Rahman, Arnab Nandi, Courtney Hebert. <i>JMIR Medical Informatics 2020.</i> [<a href='amplify.pdf'>pdf</a>]</h6>
-  				<p>We present a framework to amplify domain expertise through the entire data pipeline, from curation and cleaning to analysis. This involves building systems that summarize data, guide the user, allow interactive updates, and accelerate domain expert's task.</p>
+  				<p> Domain expertise is needed at all stages of the data pipeline from collection to cleaning and not just at the analysis stage. While tools exist to incorporate domain expert feedback to a limited stage for the analysis stage, tools at earlier pipeline steps focus on data scientist and neglect domain experts who have different needs and skills.  We present a framework to amplify domain expertise through the entire data pipeline. This involves building systems that summarize data, guide the user, allow interactive updates, and accelerate domain expert's task. Expertise amplification is demonstrated with a case study.</p>
   			</div>
   		</div>
   	</div>
@@ -121,7 +156,7 @@
   	<div class="container-fluid">
   		<div class="row">
   			<div class="col-md-auto">
-  				<img src="transformer_overview.png" height="150">
+  				<img src="transformer_overview.png" height="150" >
   			</div>
   			<div class="col">
   				<h5 style="margin:0; padding:0;" class="card-title">TRANSFORMER: A Database-Driven Approach to Generating Forms for Constrained Interaction </h5>
@@ -161,7 +196,7 @@
   			</div>
   			<div class="col">
   			<h5 style="margin:0; padding:0;" class="card-title">Exploratory Visualizations of Rules for Validation of Expert Decisions</h5>
-  				<h6 class="card-subtitle mb-2 text-muted">Protiva Rahman, Jian Chen, Courtney Hebert, Preeti Pancholi, Mark Lustberg, Kurt Stevenson, Arnab Nandi. <i>DSIA, co-located with IEEE VIS 2018.</i> [<a href='dsia.pdf'>pdf</a>][<a href='vis18-dsia.pdf'>slides</a>]</h6>
+  				<h6 class="card-subtitle mb-2 text-muted">Protiva Rahman, Jian Chen, Courtney Hebert, Preeti Pancholi, Mark Lustberg, Kurt Stevenson, Arnab Nandi. <i>DSIA workshop at IEEE VIS 2018.</i> [<a href='dsia.pdf'>pdf</a>][<a href='vis18-dsia.pdf'>slides</a>]</h6>
   				<p>We present an interactive visualization system which allows users to explore relationships between rules, such as conflicts and
 redundancies, and see how applying the rule would affect the data. Our design allows users to interactively resolve conflicts by
 providing feedback on the correctness of each rule. Results of interacting with a rule are immediately applied to the data and redundant
