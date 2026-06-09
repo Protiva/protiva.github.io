@@ -102,5 +102,104 @@ a:link, a:visited {
 
 .card{
   font-size: 15px;
-  background-color: white;
+  background-color: :#E4E5E8;
 }
+
+
+.social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 0.5px solid var(--border-strong);
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .social-link:hover {
+      background: var(--tag-bg);
+      color: var(--text-primary);
+    }
+
+    .social-link svg {
+      width: 13px;
+      height: 13px;
+      flex-shrink: 0;
+    }
+
+    /* ── Section labels ── */
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 2.5rem 0 1rem;
+    }
+
+     .container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── Header ── */
+    .header {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 2.5rem;
+      align-items: start;
+      padding: 3rem 0 2.5rem;
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    
+    .header-name {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 400;
+      margin-bottom: 3px;
+      line-height: 1.2;
+    }
+
+    .header-role {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .header-bio {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+
+    .header-bio em {
+      font-style: italic;
+      color: var(--text-primary);
+    }
+
+     @media (prefers-color-scheme: dark) {
+      :root {
+        --text-primary: #ebebdf;
+        --text-secondary: #a0a094;
+        --text-muted: #6a6a62;
+        --bg: #18181a;
+        --surface: #222224;
+        --border: rgba(255,255,255,0.09);
+        --border-strong: rgba(255,255,255,0.16);
+        --accent: #6fa8e0;
+        --accent-bg: #1a2d42;
+        --tag-bg: #2a2a2c;
+        --tag-text: #b0b0a8;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }

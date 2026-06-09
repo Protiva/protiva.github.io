@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protiva Rahman</title>
+  <meta name="description" content="Protiva Rahman — Research Assistant Professor in Biomedical Informatics at University of Florida. NLP, data science, and human-computer interaction for healthcare." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text-primary: #1a1620;
+      --text-secondary: #5a5264;
+      --text-muted: #8a7f96;
+      --bg: #faf8fc;
+      --surface: #ffffff;
+      --border: rgba(80,40,120,0.10);
+      --border-strong: rgba(80,40,120,0.20);
+      --accent: #5b2d9e;          /* mid purple — links, tags */
+      --accent-light: #7c4dbb;    /* hover states */
+      --accent-bg: #f0eafa;       /* tag backgrounds */
+      --accent-bg-deep: #e4d6f5;  /* hovered tag bg */
+      --nav-accent: #3d1a72;      /* darkest — nav hover */
+      --tag-bg: #f3f0f8;
+      --tag-text: #4a3860;
+      --font-sans: 'Inter', system-ui, sans-serif;
+      --font-serif: 'Lora', Georgia, serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text-primary: #ede8f5;
+        --text-secondary: #a898be;
+        --text-muted: #706088;
+        --bg: #130f1a;
+        --surface: #1e1828;
+        --border: rgba(180,140,255,0.10);
+        --border-strong: rgba(180,140,255,0.20);
+        --accent: #b48ae8;
+        --accent-light: #caa8f5;
+        --accent-bg: #2a1f3d;
+        --accent-bg-deep: #352847;
+        --nav-accent: #d4b8f8;
+        --tag-bg: #221a30;
+        --tag-text: #c0a8e0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text-primary);
+      font-size: 15px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--bg);
+      border-bottom: 0.5px solid var(--border);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      height: 52px;
+    }
+
+    nav a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    nav a:hover { color: var(--nav-accent); }
+    nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── Header ── */
+    .header {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 2.5rem;
+      align-items: start;
+      padding: 3rem 0 2.5rem;
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    .headshot {
+      width: 110px;
+      height: 110px;
+      border-radius: 10px;
+      object-fit: cover;
+      display: block;
+      border: 0.5px solid var(--border);
+    }
+
+    /* Fallback if image doesn't load */
+    .headshot-fallback {
+      width: 110px;
+      height: 110px;
+      border-radius: 10px;
+      background: var(--tag-bg);
+      border: 0.5px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .header-name {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 400;
+      margin-bottom: 3px;
+      line-height: 1.2;
+    }
+
+    .header-role {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .header-bio {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+
+    .header-bio em {
+      font-style: italic;
+      color: var(--text-primary);
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 0.5px solid var(--border-strong);
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .social-link:hover {
+      background: var(--accent-bg);
+      color: var(--accent);
+    }
+
+    .social-link svg {
+      width: 13px;
+      height: 13px;
+      flex-shrink: 0;
+    }
+
+    /* ── Section labels ── */
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 2.5rem 0 1rem;
+    }
+
+    /* ── News ── */
+    .news-list { list-style: none; }
+
+    .news-item {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 1rem;
+      font-size: 13.5px;
+      padding: 0.6rem 0;
+      border-bottom: 0.5px solid var(--border);
+      align-items: baseline;
+    }
+
+    .news-item:first-child { border-top: 0.5px solid var(--border); }
+
+    .news-date {
+      font-size: 12px;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .news-text a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .news-text a:hover { text-decoration: underline; }
+
+    /* ── Publications ── */
+    .pub-card {
+      background: var(--surface);
+      border: 0.5px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      transition: border-color 0.15s;
+    }
+
+    .pub-card:hover { border-color: var(--border-strong); }
+
+    .pub-title {
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 4px;
+      line-height: 1.45;
+    }
+
+    .pub-authors {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      margin-bottom: 3px;
+      font-style: italic;
+      font-family: var(--font-serif);
+    }
+
+    .pub-venue {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .pub-abstract {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .pub-footer {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .pub-link {
+      font-size: 11.5px;
+      padding: 3px 9px;
+      border-radius: 5px;
+      border: 0.5px solid var(--border-strong);
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .pub-link:hover {
+      background: var(--accent-bg);
+      color: var(--accent);
+    }
+
+    .pub-tag {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--accent-bg);
+      color: var(--accent);
+      font-weight: 500;
+      margin-left: auto;
+    }
+
+    /* ── Presentations ── */
+    .pres-item {
+      font-size: 13.5px;
+      padding: 0.65rem 0;
+      border-bottom: 0.5px solid var(--border);
+      line-height: 1.55;
+      display: flex;
+      gap: 1rem;
+      align-items: baseline;
+    }
+
+    .pres-item:first-child { border-top: 0.5px solid var(--border); }
+
+    .pres-year {
+      font-size: 12px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      min-width: 36px;
+    }
+
+    .pres-text { flex: 1; }
+
+    .pres-text a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 12px;
+      margin-left: 4px;
+    }
+
+    .pres-text a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    footer {
+      margin: 3rem 0 2rem;
+      padding-top: 1.5rem;
+      border-top: 0.5px solid var(--border);
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      nav { gap: 1.25rem; padding: 0 1rem; }
+      .container { padding: 0 1rem; }
+
+      .header {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding: 2rem 0 2rem;
+      }
+
+      .headshot, .headshot-fallback {
+        width: 80px;
+        height: 80px;
+      }
+
+      .pub-card { padding: 0.9rem 1rem; }
+
+      .news-item { grid-template-columns: 60px 1fr; }
+    }
+
+    img { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#news">News</a>
+    <a href="#pubs">Publications</a>
+    <a href="#conf">Presentations</a>
+    <a href="ProtivaRahman.pdf">CV</a>
+  </nav>
+
+  <main class="container">
+
+    <!-- ── Header / About ── -->
+    <section id="about" class="header">
+      <img
+        src="headshot_2022.jpg"
+        alt="Protiva Rahman"
+        class="headshot"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+      />
+      <div class="headshot-fallback" style="display:none;" aria-hidden="true">PR</div>
+
+      <div>
+        <h1 class="header-name">Protiva Rahman</h1>
+        <p class="header-role">
+          Research Assistant Professor, Health Outcomes &amp; Biomedical Informatics · University of Florida<br>
+          Adjunct, Biomedical Informatics · Vanderbilt University
+        </p>
+        <p class="header-bio">
+          I build tools to <em>democratize data science</em> for domain experts in healthcare. My research spans
+          <em>natural language processing, human-computer interaction, and clinical data pipelines</em>
+          applied to infectious disease and cancer. I completed my PhD in Computer Science at The Ohio State University
+          (2020) and postdoctoral training at Vanderbilt University Medical Center.
+        </p>
+        <div class="social-links">
+          <a href="mailto:protiva.r@gmail.com" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+            Email
+          </a>
+          <a href="https://scholar.google.com/citations?user=a7oFoT8AAAAJ&hl=en" class="social-link" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="10" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            Google Scholar
+          </a>
+          <a href="https://www.linkedin.com/in/protiva-rahman-88a10aa0" class="social-link" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://twitter.com/protivarahman" class="social-link" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4l16 16M4 20 20 4"/><path d="M4 4h4l12 16h-4z"/></svg>
+            Twitter/X
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── News ── -->
+    <section id="news" aria-labelledby="news-heading">
+      <p class="section-label" id="news-heading">News</p>
+      <ul class="news-list">
+        <li class="news-item">
+          <span class="news-date">Jun 2023</span>
+          <span class="news-text">Joined University of Florida as Research Assistant Professor in Biomedical Informatics</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">Mar 2023</span>
+          <span class="news-text">New <a href="manuscripts/colitis.pdf">JAMIA paper</a> on automating immunocheckpoint inhibitor-induced colitis from the EHR</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">Nov 2022</span>
+          <span class="news-text">Presenting a <a href="colitis_poster.pdf">poster</a> and <a href="manuscripts/biocuration.pdf">paper</a> at AMIA on automated data extraction from biomedical literature</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">Nov 2021</span>
+          <span class="news-text">Megan and Rachel presenting the <em>PRESCIANT method</em> at AHA <a href="https://www.ahajournals.org/doi/pdf/10.1161/ATVBAHA.121.317071">[paper]</a></span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">Oct 2021</span>
+          <span class="news-text">Presenting at AMIA on <em>Automating Data Curation from Unstructured Text</em> <a href="PS01_Rahman.pdf">[pdf]</a></span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">Jul 2021</span>
+          <span class="news-text">ASCO poster highlighted in <a href="https://www.oncologynurseadvisor.com/home/headlines/conference-coverage/asco-2021/asco-2021-lung-cancer-in-depth/lung-cancer-nsclc-prediction-model-assess-risk-metastasis-treatment">Oncology Nurse Advisor</a></span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">Aug 2020</span>
+          <span class="news-text">Successfully defended PhD thesis at The Ohio State University</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ── Publications ── -->
+    <section id="pubs" aria-labelledby="pubs-heading">
+      <p class="section-label" id="pubs-heading">Selected Publications</p>
+
+      <article class="pub-card">
+        <h2 class="pub-title">Automated curation of checkpoint inhibitor side-effects from EHR</h2>
+        <p class="pub-authors">Protiva Rahman, Cheng Ye, Kathleen Mittendorf, Michele LeNoue-Newton, Christine Micheel, Jan Wolber, Travis Osterman, Daniel Fabbri</p>
+        <p class="pub-venue">JAMIA 2023</p>
+        <p class="pub-abstract">Data pipelines for extracting EHR notes related to CPI-induced colitis, achieving 84% precision and reducing note review load by 75%. Predictive models require structured data that diagnosis codes and keyword search alone cannot reliably provide.</p>
+        <div class="pub-footer">
+          <a href="manuscripts/colitis.pdf" class="pub-link">PDF</a>
+          <a href="colitis_poster.pdf" class="pub-link">Poster</a>
+          <span class="pub-tag">NLP · EHR</span>
+        </div>
+      </article>
+
+      <article class="pub-card">
+        <h2 class="pub-title">Semi-automated data curation from biomedical literature</h2>
+        <p class="pub-authors">Protiva Rahman, Rachel Xiang, Yihua Wang, Joshua Beckman, Quinn Wells, Iris Jaffe, Megan Shuey, Daniel Fabbri</p>
+        <p class="pub-venue">AMIA 2022</p>
+        <p class="pub-abstract">A tool using NLP to auto-populate web forms for biomedical literature curation; 70% accuracy on categorical fields and 49% faster task completion than manual curation.</p>
+        <div class="pub-footer">
+          <a href="manuscripts/biocuration.pdf" class="pub-link">PDF</a>
+          <span class="pub-tag">NLP · Literature</span>
+        </div>
+      </article>
+
+      <article class="pub-card">
+        <h2 class="pub-title">Amplifying domain expertise in clinical data pipelines</h2>
+        <p class="pub-authors">Protiva Rahman, Arnab Nandi, Courtney Hebert</p>
+        <p class="pub-venue">JMIR Medical Informatics 2020</p>
+        <p class="pub-abstract">A framework for incorporating domain expert feedback at every stage of the clinical data pipeline — from collection through cleaning to analysis — with a case study on antimicrobial susceptibility data.</p>
+        <div class="pub-footer">
+          <a href="manuscripts/amplify.pdf" class="pub-link">PDF</a>
+          <span class="pub-tag">HCI · Data pipelines</span>
+        </div>
+      </article>
+
+      <article class="pub-card">
+        <h2 class="pub-title">Evaluating interactive data systems</h2>
+        <p class="pub-authors">Protiva Rahman, Lilong Jiang, Arnab Nandi</p>
+        <p class="pub-venue">VLDB Journal 2020</p>
+        <p class="pub-abstract">A survey of interactive workload characteristics, confounding factors in user studies, and popular evaluation metrics, motivating behavior-driven evaluation for interactive interfaces.</p>
+        <div class="pub-footer">
+          <a href="manuscripts/eval.pdf" class="pub-link">PDF</a>
+          <a href="https://speakerdeck.com/arnabdotorg/evaluating-interactive-data-systems-workloads-metrics-and-guidelines" class="pub-link">Slides</a>
+          <a href="https://github.com/ixlab/eval" class="pub-link">GitHub</a>
+          <span class="pub-tag">HCI · Survey</span>
+        </div>
+      </article>
+
+      <article class="pub-card">
+        <h2 class="pub-title">TRANSFORMER: Database-driven form generation for constrained interaction</h2>
+        <p class="pub-authors">Protiva Rahman, Arnab Nandi</p>
+        <p class="pub-venue">ACM IUI 2019 · acceptance rate 25%</p>
+        <p class="pub-abstract">A system that leverages database contents to optimize form UI widgets and layout for constrained input settings, achieving up to 50–57% reduction in form completion time on smartphones and smartwatches.</p>
+        <div class="pub-footer">
+          <a href="manuscripts/transformer.pdf" class="pub-link">PDF</a>
+          <a href="transformer_iui.pdf" class="pub-link">Slides</a>
+          <span class="pub-tag">HCI · Forms</span>
+        </div>
+      </article>
+
+      <article class="pub-card">
+        <h2 class="pub-title">ICARUS: Minimizing human effort in iterative data completion</h2>
+        <p class="pub-authors">Protiva Rahman, Courtney Hebert, Arnab Nandi</p>
+        <p class="pub-venue">VLDB 2018 · acceptance rate 17%</p>
+        <p class="pub-abstract">An interactive data completion system that shows users useful subsets for edits and generalizes single edits to multiple cells via suggested rules, used to complete microbiology datasets at OSU Biomedical Informatics.</p>
+        <div class="pub-footer">
+          <a href="manuscripts/icarus.pdf" class="pub-link">PDF</a>
+          <a href="icarus.html" class="pub-link">Website</a>
+          <span class="pub-tag">Data systems</span>
+        </div>
+      </article>
+
+      <article class="pub-card">
+        <h2 class="pub-title">Exploratory visualizations of rules for validation of expert decisions</h2>
+        <p class="pub-authors">Protiva Rahman, Jian Chen, Courtney Hebert, Preeti Pancholi, Mark Lustberg, Kurt Stevenson, Arnab Nandi</p>
+        <p class="pub-venue">DSIA workshop at IEEE VIS 2018</p>
+        <p class="pub-abstract">An interactive visualization for exploring relationships between rules — conflicts and redundancies — and resolving them with expert feedback applied live to the underlying data.</p>
+        <div class="pub-footer">
+          <a href="manuscripts/dsia.pdf" class="pub-link">PDF</a>
+          <a href="manuscripts/vis18-dsia.pdf" class="pub-link">Slides</a>
+          <span class="pub-tag">Visualization</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- ── Presentations ── -->
+    <section id="conf" aria-labelledby="conf-heading">
+      <p class="section-label" id="conf-heading">Conference Presentations</p>
+      <ul style="list-style:none;">
+        <li class="pres-item">
+          <span class="pres-year">2022</span>
+          <span class="pres-text"><strong>Rahman</strong> et al. Accelerated data curation of colitis cases. <em>AMIA 2022.</em> <a href="colitis_poster.pdf">[pdf]</a></span>
+        </li>
+        <li class="pres-item">
+          <span class="pres-year">2021</span>
+          <span class="pres-text"><strong>Rahman</strong>, Fabbri. Automating data from unstructured texts. <em>AMIA 2021.</em> <a href="PS01_Rahman.pdf">[pdf]</a></span>
+        </li>
+        <li class="pres-item">
+          <span class="pres-year">2021</span>
+          <span class="pres-text"><strong>Rahman</strong> et al. Clinical and genomic predictors of brain metastases in NSCLC: AACR Project GENIE. <em>ASCO 2021.</em> <a href="Poster_2032_Rahman.pdf">[pdf]</a> <a href="https://www.oncologynurseadvisor.com/home/headlines/conference-coverage/asco-2021/asco-2021-lung-cancer-in-depth/lung-cancer-nsclc-prediction-model-assess-risk-metastasis-treatment">[article]</a></span>
+        </li>
+        <li class="pres-item">
+          <span class="pres-year">2020</span>
+          <span class="pres-text"><strong>Rahman</strong> et al. Amplifying domain expertise in antimicrobial data pipeline. <em>AMIA Podium Abstract 2020.</em> <a href="amia2020podium.pdf">[pdf]</a></span>
+        </li>
+        <li class="pres-item">
+          <span class="pres-year">2020</span>
+          <span class="pres-text"><strong>Rahman</strong> et al. Designing an interface for a hospital geographic information system. <em>AMIA 2020.</em> <a href="amia2020poster.pdf">[pdf]</a></span>
+        </li>
+        <li class="pres-item">
+          <span class="pres-year">2019</span>
+          <span class="pres-text"><strong>Rahman</strong> et al. Predicting empiric antibiotic coverage based on patient factors. <em>AMIA 2019.</em> <a href="amia_poster_2019.pdf">[pdf]</a></span>
+        </li>
+        <li class="pres-item">
+          <span class="pres-year">2018</span>
+          <span class="pres-text"><strong>Rahman</strong> et al. Derivation of expert consensus rules for missing antimicrobial susceptibility data. <em>AMIA 2018.</em> <a href="amia_poster_2018_v2.pdf">[pdf]</a></span>
+        </li>
+        <li class="pres-item">
+          <span class="pres-year">2018</span>
+          <span class="pres-text"><strong>Rahman</strong>, Hebert, Nandi. Enabling effective data interaction for domain experts. <em>IEEE ICHI PhD Symposium 2018.</em> <a href="PID5362225.pdf">[pdf]</a> <a href="ichi_slides.pdf">[slides]</a> <a href="ichi_poster.pdf">[poster]</a></span>
+        </li>
+        <li class="pres-item">
+          <span class="pres-year">2016</span>
+          <span class="pres-text"><strong>Rahman</strong>, Hebert, Lai. Parsing complex microbiology data for secondary use. <em>AMIA 2016.</em> <a href="amia_final_2016.pdf">[pdf]</a></span>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Protiva Rahman · University of Florida · <a href="mailto:protiva.r@gmail.com" style="color: var(--accent);">protiva.r@gmail.com</a></p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
